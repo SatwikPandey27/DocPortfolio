@@ -1,0 +1,76 @@
+.home{
+  margin-top: 76px;
+  overflow: hidden;
+}
+
+.images-top{
+  background-color: black;
+  position: relative;
+}
+
+.logo{
+  position: absolute;
+  background: linear-gradient(to bottom right, rgba(0, 128, 0, 0.25), rgba(128, 128, 128, 0.25));
+  color: whitesmoke;
+}
+
+.col-logo{
+  padding-right: 0;
+  padding-left: 48px;
+}
+
+.logo-img{
+  opacity: 100% !important;
+}
+
+.clinic{
+  font-size: 60px;
+  -webkit-text-stroke: 1px black; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.add{
+  font-size: 30px;
+  -webkit-text-stroke: 0px black; 
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .clinic {
+    font-size: 26.5px; /* Smaller text size for mobile */
+    top: 20%;
+  }
+
+  .add {
+    font-size: 11px; /* Adjust additional text to fit smaller screen */
+  }
+
+  .logo {
+    background: linear-gradient(to bottom right, rgba(0, 128, 0, 0.5), rgba(128, 128, 128, 0.5)); /* Increase transparency for better mobile visibility */
+    font-size: 20px;
+  }
+
+  .images-top {
+    padding: 0; /* Add padding for smaller screens */
+  }
+
+  .logoS{
+    width: 120px;
+    margin-top: 32px;
+    margin-left: -20px;
+  }
+
+  .img-main{
+    height: 300px;
+    width: 100%;
+  }
+
+  .col-img{
+    display: none;
+  }
+
+  .logo-img{
+    margin-top: 50px;
+    margin-left: 2px;
+  }
+}
