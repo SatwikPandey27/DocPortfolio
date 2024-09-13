@@ -11,16 +11,16 @@ export default function AboutDrNikhil() {
       <div className="col-2 mx-auto me-5 imgpicalign">
         <img src={pic} alt="dr nikhil here" className="imgfluid border rounded-circle border-success border-4 imgpic" />
       </div>
-      <div className="background-container col-9 ms-5 ps-5">
+      <div className="background-container pt-0 col-9 ms-5 ps-5">
       <br />
       <br />
       <div className='text-content'>
         <p>
-          <b>Dr Nikhil Jain</b> <br />
+          <div className='fs-2 pb-1'>Dr Nikhil Jain</div>
           Spine deformity (scoliosis) & endoscopy surgeon <br />
           MBBS, MS Ortho, FNB Spine <br />
           Fellowship Macquarie University Hospital, Sydney, Australia. <br />
-          Fellowship Queen’s Medical Center, Nottingham, UK (Royal College of Surgeons England & Royal College of Surgeons Edinburgh). <br />
+          Fellowship Queen’s Medical Center, Nottingham, UK (Royal College of Surgeons England br & Royal College of Surgeons Edinburgh). <br />
           Call - +91-9910668831
         </p>
       </div>

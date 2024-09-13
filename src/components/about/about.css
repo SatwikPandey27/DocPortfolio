@@ -4,7 +4,7 @@
 }
 
 .background-container {
-  background-color: rgba(10, 106, 10, 0.6); /* Green with 50% opacity */
+  background-color: rgba(10, 106, 10, 0.4); /* Green with 50% opacity */
   padding: 1rem;
   position: relative;
 }
@@ -13,7 +13,7 @@
   position: relative;
   z-index: 1; /* Ensure text is above the background */
   color: black;
-  font-weight: 500;
+  font-weight: 650;
 }
 
 

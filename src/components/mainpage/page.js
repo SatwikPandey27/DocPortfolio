@@ -1,8 +1,8 @@
 import React from "react";
 import "./page.css";
-import Main from "../../assets/img_surgery_crop.jpg";
+import Main from "../../assets/generalphysician.jpg";
 import col1 from "../../assets/scans.jpg";
-import col2 from "../../assets/img_surgery_robot.jpg";
+import col2 from "../../assets/scans1.jpg";
 // import PfTimeline from "../timeline/timeline";
 import ContactUs from '../contact/contact'
 import Footer from '../footer/footer'
@@ -60,10 +60,10 @@ export default function home() {
             </div>
             <div className="col-4 mx-0 px-0 col-img">
               <div className="row">
-                <img loading="lazy" className="img-fluid img-col1 w-100" src={col1} alt="scans" />
+                <img loading="lazy" className="img-fluid img-col2 w-100" src={col2} alt="robotic_surgery" />
               </div>
               <div className="row">
-                <img loading="lazy" className="img-fluid img-col2 w-100" src={col2} alt="robotic_surgery" />
+                <img loading="lazy" className="img-fluid img-col1 w-100" src={col1} alt="scans" />
               </div>
             </div>
           </div>
