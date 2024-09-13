@@ -34,7 +34,7 @@ export default function home() {
             <div className="row mx-auto text-center px-5 w-75">
               <div className="img-div col px-auto">
                 <img className="size-image mx-auto p-0" src={pic} alt="about section drnikhil" />
-                <a className="btn btn-success w-50 mx-auto mt-3">
+                <a className="btn btn-success w-50 mx-auto mt-3" href="/drnikhil">
                   Dr. Nikhil Jain <> </><i className="bi bi-caret-right-fill"></i>
                 </a>
               </div>
