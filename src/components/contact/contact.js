@@ -49,7 +49,8 @@ export default function Contact() {
       <div className="contact-page row">
         <div className='col text-center py-2 mx-2'>
           <p>For immediate assistance or to get in touch directly, simply scan the QR code below with your phone. You’ll be directed to a quick way to reach me via phone or messaging services.</p>
-          <img className='contactqr' src={Phone} alt="Qr-Code" />
+          <img className='contactqr mb-3' src={Phone} alt="Qr-Code" />
+          <p><b>+91 99106 68831</b></p>
         </div>
         <div className="text-zone col text-center py-2 mx-2">
           <p>
@@ -97,7 +98,7 @@ export default function Contact() {
         <div className="col py-2">
           <p className='mb-1'>For in-person consultations or treatments, you are welcome to visit my clinic during working hours.</p>
           <p className='mb-0'>Room no - 68, OPD - 6, Floor 5 , 
-            Manipal hospital, Sector 6, Dwarka :</p>
+            Manipal hospital, Sector 6, Dwarka, New Delhi - 110075 :</p>
           <div className="map-wrap">
             <MapContainer center={location} zoom={25} className='border border-2 border-black'>
               <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

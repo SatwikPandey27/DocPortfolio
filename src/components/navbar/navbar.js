@@ -22,25 +22,36 @@ export default function navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto menu">
               <li className="nav-item active">
-                <a className="nav-link" href="/">
+                <a className="nav-link fs-5" href="/">
                   Home
                 </a>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item dropdown">
+                <button className="btn dropdown-toggle border-0 fs-5" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </button>
+                <ul className="dropdown-menu border border border-dark-subtle border-2">
+                  <li className="mx-auto"><a className="dropdown-item mx-auto w-100" href="/drnikhil">Dr. Nikhil Jain</a></li>
+                  <li className="mx-auto"><a className="dropdown-item mx-auto w-100" href="/drrajesh">Dr. Rajesh Kansal</a></li>
+                  <li className="mx-auto"><a className="dropdown-item mx-auto w-100" href="/dr">Something here</a></li>
+                </ul>
+              </li>
+
+              {/* <li className="nav-item">
                 <a className="nav-link" href="#about">
                   About
                 </a>
-              </li>
-
+              </li> */}
+              {/* 
               <li className="nav-item">
                 <a className="nav-link" href="#timeline">
                   Timeline
                 </a>
-              </li>
+              </li> */}
 
               <li className="nav-item">
-                <a className="nav-link" href="#contact">
+                <a className="nav-link fs-5" href="#contact">
                   Contact
                 </a>
               </li>

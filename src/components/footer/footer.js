@@ -3,8 +3,8 @@ import './footer.css'
 
 export default function Footer() {
   return (
-    <div className='border-3 border-top border-danger-subtle'>
-      <footer className="site-footer section-padding" id="contact">
+    <div>
+      <footer className="site-footer section-padding border-3 border-top border-danger-subtle" id="footer">
         <div className="container containerfooter">
           <div className="row">
 
@@ -12,19 +12,17 @@ export default function Footer() {
               <h5 className="mb-lg-4 mb-3">Working Hours</h5>
 
               <ul className="list-group list-group-flush">
+                
                 <li className="list-group-item d-flex">
-                  Sunday : Closed
+                  Monday - Saturday 
+                  <span>9:00 AM - 5:00 PM</span>
                 </li>
 
                 <li className="list-group-item d-flex">
-                  Monday, Tuesday - Friday
-                  <span>8:00 AM - 3:30 PM</span>
+                  Sunday
+                  <span>Closed</span>
                 </li>
 
-                <li className="list-group-item d-flex">
-                  Saturday
-                  <span>10:30 AM - 5:30 PM</span>
-                </li>
               </ul>
             </div>
 
@@ -32,7 +30,7 @@ export default function Footer() {
               <h5 className="mb-lg-4 mb-3">My Clinic</h5>
               <p>
                 <b>Satyak Healthcare Clinic</b><br />
-                93 A, MaaShakti Apartments, Paschim Vihar, New Delhi, Delhi 110063
+                124,A MaaShakti Apartments, A1 Block, Paschim Vihar, New Delhi, Delhi 110063
               </p>
             </div>
 

@@ -3,10 +3,29 @@
   overflow: hidden;
 }
 
+.size-image {
+  width: 250px;
+  border: 10px solid white;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-div{
+  position: relative;
+  top: 250px;
+}
+
 .images-top{
   background-color: black;
   position: relative;
+  z-index: 2;
 }
+
+#contact{
+  margin-top: 100px;
+}
+
 
 .logo{
   position: absolute;
@@ -20,6 +39,7 @@
 }
 
 .logo-img{
+  align-items: center;
   opacity: 100% !important;
 }
 
@@ -63,6 +83,10 @@
   .img-main{
     height: 300px;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
   .col-img{
