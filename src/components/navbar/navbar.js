@@ -4,7 +4,7 @@ import "./navbar.css";
 export default function navbar() {
   return (
     <div id="home">
-      <nav className="navbar navbar-expand-lg fixed-top shadow-lg h-20 border-3 border-bottom border-danger-subtle nav">
+      <nav className="navbar navbar-expand-lg fixed-top shadow-lg h-20 nav">
         <div className="container">
 
           <button
@@ -34,7 +34,7 @@ export default function navbar() {
                 <ul className="dropdown-menu border border border-dark-subtle border-2">
                   <li className="mx-auto"><a className="dropdown-item mx-auto w-100" href="/drnikhil">Dr. Nikhil Jain</a></li>
                   <li className="mx-auto"><a className="dropdown-item mx-auto w-100" href="/drrajesh">Dr. Rajesh Kansal</a></li>
-                  <li className="mx-auto"><a className="dropdown-item mx-auto w-100" href="/dr">Something here</a></li>
+                  <li className="mx-auto"><a className="dropdown-item mx-auto w-100" href="/drkhushboo">Dr. Khushboo Kansal</a></li>
                 </ul>
               </li>
 

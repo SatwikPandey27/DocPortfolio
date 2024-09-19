@@ -55,6 +55,10 @@
   }
 }
 
+.btnhover:hover{
+  background: #285860 !important;
+}
+
 @media only screen and (max-width: 600px) {
   .contact-form{
     width: 320px;

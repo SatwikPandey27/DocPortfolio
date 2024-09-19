@@ -1,7 +1,7 @@
 import React ,{ useRef } from 'react'
 import 'leaflet/dist/leaflet.css';
 import emailjs from '@emailjs/browser'
-import Phone from '../../assets/contact.png'
+// import Phone from '../../assets/contact.png'
 import './contact.css'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
@@ -48,9 +48,9 @@ export default function Contact() {
       <p>I am committed to providing compassionate and personalized care for all my patients. Whether you're looking to schedule an appointment, have a medical inquiry, or need advice, I'm here to help. You can reach me through the following methods:</p>
       <div className="contact-page row">
         <div className='col text-center py-2 mx-2'>
-          <p>For immediate assistance or to get in touch directly, simply scan the QR code below with your phone. You’ll be directed to a quick way to reach me via phone or messaging services.</p>
-          <img className='contactqr mb-3' src={Phone} alt="Qr-Code" />
-          <p><b>+91 99106 68831</b></p>
+          <p>For immediate assistance or to get in touch directly, simply contact us on the number below :</p>
+          {/* <img className='contactqr mb-3' src={Phone} alt="Qr-Code" /> */}
+          <p><i class="bi bi-telephone-fill"></i> <b>+91 99106 68831</b></p>
         </div>
         <div className="text-zone col text-center py-2 mx-2">
           <p>
@@ -89,7 +89,7 @@ export default function Contact() {
                   ></textarea>
                 </li>
                 <li className='text-start'>
-                  <input type="submit" className="btn btn-success" value="SEND" />
+                  <input type="submit" className="btnhover btn btn-success" value="SEND" />
                 </li>
               </ul>
             </form>

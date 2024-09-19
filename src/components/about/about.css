@@ -4,9 +4,10 @@
 }
 
 .background-container {
-  background-color: rgba(10, 106, 10, 0.4); /* Green with 50% opacity */
+  background-color: rgba(78, 169, 183, 0.4); /* Green with 50% opacity */
   padding: 1rem;
   position: relative;
+  overflow: hidden;
 }
 
 .text-content {
@@ -16,9 +17,16 @@
   font-weight: 650;
 }
 
-
 .row1{
   position: relative;
+}
+
+.custwidth{
+  width: 94% !important;
+}
+
+.custwid{
+  width: 76.6111111111111111111111111111111111112% !important;
 }
 
 .main-row{

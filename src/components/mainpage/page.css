@@ -3,6 +3,14 @@
   overflow: hidden;
 }
 
+.btn{
+  background: #4ea9b7;
+}
+
+.btnhover:hover{
+  background: #285860 !important;
+}
+
 .size-image {
   width: 250px;
   border: 10px solid white;
@@ -13,7 +21,7 @@
 
 .img-div{
   position: relative;
-  top: 250px;
+  top: 230px;
 }
 
 .images-top{
@@ -25,7 +33,6 @@
 #contact{
   margin-top: 100px;
 }
-
 
 .logo{
   position: absolute;

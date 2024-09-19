@@ -7,8 +7,10 @@ import col2 from "../../assets/scans1.jpg";
 import ContactUs from '../contact/contact'
 import Footer from '../footer/footer'
 // import About from '../about/about'
-import logo from '../../assets/logo2nobgedit.png'
+import logo from '../../assets/logo2.png'
 import pic from '../../assets/Image1.jpeg'
+import pic2 from '../../assets/image2.jpeg'
+import pic3 from '../../assets/image3.jpeg'
 
 export default function home() {
   return (
@@ -17,8 +19,8 @@ export default function home() {
         <div className="images-top justify-center">
           <div className="logo w-100 h-100">
             <div className="logo-img row align-items-center">
-              <div className="col-3 col-logo">
-                <img loading="lazy" className="logoS" src={logo} alt="logo here" />
+              <div className="col-3 col-logo mt-5 ms-4">
+                <img loading="lazy" className="logoS border rounded-circle" src={logo} alt="logo here" />
               </div>
               <div className="col ms-1 me-2 mt-5">
                 <p className="clinic">
@@ -34,24 +36,23 @@ export default function home() {
             <div className="row mx-auto text-center px-5 w-75">
               <div className="img-div col px-auto">
                 <img className="size-image mx-auto p-0" src={pic} alt="about section drnikhil" />
-                <a className="btn btn-success w-50 mx-auto mt-3" href="/drnikhil">
+                <a className="btn btnhover btn-success w-50 mx-auto mt-3" href="/drnikhil">
                   Dr. Nikhil Jain <> </><i className="bi bi-caret-right-fill"></i>
                 </a>
               </div>
               <div className="img-div col px-auto">
-                <img className="size-image mx-auto p-0" src={pic} alt="about section kansal" />
-                <button className="btn btn-success mx-auto mt-3 w-75 px-0">
+                <img className="size-image mx-auto p-0" src={pic3} alt="about section kansal" />
+                <a className="btn btnhover btn-success mx-auto mt-3 w-75 px-0" href='/drkhushboo'>
                   Dr. Khushboo Kansal <> </><i className="bi bi-caret-right-fill"></i>
-                </button>
+                </a>
               </div>
               <div className="img-div col px-auto">
-                <img className="size-image mx-auto p-0" src={pic} alt="about section 3" />
-                <button className="btn btn-success mx-auto mt-3">
+                <img className="size-image mx-auto p-0" src={pic2} alt="about section 3" />
+                <a className="btn btnhover btn-success mx-auto mt-3" href='/drrajesh'>
                   Dr. Rajesh Kansal <> </><i className="bi bi-caret-right-fill"></i>
-                </button>
+                </a>
               </div>
             </div>
-
           </div>
 
           <div className="row">
@@ -79,6 +80,7 @@ export default function home() {
           <h1 className="text-center m-5">Timeline</h1>
           <PfTimeline/>
           </div> */}
+        <br />
         <br />
         <div id="contact"></div>
         <br />
