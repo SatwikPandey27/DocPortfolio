@@ -8,15 +8,14 @@ export default function AboutDrKhushboo() {
     <div className='main'>
     <div className="row row1 mt-5 pt-3"><img className='pe-0' src={psy} alt="about1" /></div>
     <div className="row main-row mx-auto">
-      <div className="col-2 mx-auto me-5 imgpicalign">
+      <div className="col mx-auto me-5 imgpicalign">
         <img src={pic} alt="dr khushboo here" className="imgfluid border rounded-circle border-black border-1 imgpic" />
       </div>
       <div className="background-container pt-0 col-9 ms-5 ps-5">
       <br />
-      <br />
       <div className='text-content'>
         <p>
-          <div className='fs-2 pb-1'>Dr. Khushboo Kansal</div>
+          <div className='fs-1 pb-1'>Dr. Khushboo Kansal</div>
             Consultant Psychiatrist <br />
             MBBS, MD Psychiatry <br />
             Membership of the Royal College of Psychiatrists, England (MRCPsych)

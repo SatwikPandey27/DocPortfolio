@@ -63,6 +63,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .img-div{
+    position: relative;
+  }
+
   .clinic {
     font-size: 26.5px; /* Smaller text size for mobile */
     top: 20%;

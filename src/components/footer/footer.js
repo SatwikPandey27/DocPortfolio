@@ -39,9 +39,7 @@ export default function Footer() {
 
               <ul className="social-icon">
                 <li><a href="https://www.facebook.com/satyakhealthcareclinic/" className="social-icon-link bi-facebook"> </a></li>
-                <li><a href="https://www.linkedin.com/company/drnikhiljain" className="social-icon-link bi-linkedin"> </a></li>
                 <li><a href="https://www.instagram.com/satyakhealthcareclinic/" className="social-icon-link bi-instagram"> </a></li>
-                <li><a href="https://www.youtube.com/@Dr.NikhilJain" className="social-icon-link bi-youtube"> </a></li>
               </ul>
             </div>
           </div>

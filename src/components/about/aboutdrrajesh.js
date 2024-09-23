@@ -7,27 +7,25 @@ export default function AboutDrRajesh() {
   return (
     <div className='main'>
     <div className="row row1"><img className='pe-0 mt-5 pt-4' src={gp} alt="about1" /></div>
-    <div className="row main-row custwidth">
-      <div className="col-2 me-5 imgpicalign">
+    <div className="row main-row mx-auto">
+      <div className="col-2 mx-auto me-5 imgpicalign">
         <img src={pic} alt="dr rajesh here" className="imgfluid border rounded-circle border-black border-1 imgpic" />
       </div>
-      <div className="background-container pt-0 col-9 ms-5 ps-5 me-0 pe-0 custwid">
-        <br />
-        <br />
-        <div className='text-content'>
-          <p>
-            <div className='fs-2 pb-1'>Dr. Rajesh Kansal</div>
-            General Physician, Paschim Vihar, Delhi <br />
-            MBBS, Sardar Patel Medical College (1984) <br />
-            40 years of experience in general medicine <br />
+      <div className="background-container pt-0 col-9 p-5 ms-auto">
+      <br />
+      <div className='text-content'>
+        <p>
+          <div className='fs-1 pb-1'>Dr. Rajesh Kansal</div>
+          General Physician, Paschim Vihar, Delhi <br />
+          MBBS, Sardar Patel Medical College (1984) <br />
+          40 years of experience in general medicine <br />
           </p>
-        </div>
+      </div>
       </div>
     </div>
     <div className='row media mt-5'>
       <div className="col-9 mx-auto imgtextalign">
-        <h1>Dr. Rajesh Kansal</h1>
-        <h2>General Physician in Paschim Vihar, Delhi</h2>
+        <h1>General Physician in Paschim Vihar, Delhi</h1>
 
         <p>Dr. Rajesh Kansal is a seasoned doctor with 40 years of experience in the medical field. He completed his MBBS from Sardar Patel Medical College in 1984 and has since gained extensive expertise in treating a wide range of general medical conditions. Over the course of his career, he has built a reputation for providing comprehensive and compassionate care to patients of all ages.</p>
 

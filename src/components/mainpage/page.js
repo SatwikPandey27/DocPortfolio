@@ -20,13 +20,13 @@ export default function home() {
           <div className="logo w-100 h-100">
             <div className="logo-img row align-items-center">
               <div className="col-3 col-logo mt-5 ms-4">
-                <img loading="lazy" className="logoS border rounded-circle" src={logo} alt="logo here" />
+                <img loading="lazy" className="logoS border rounded-circle border-3 border-danger-subtle" src={logo} alt="logo here" />
               </div>
               <div className="col ms-1 me-2 mt-5">
                 <p className="clinic">
                   <b>Satyak Healthcare Clinic</b><br />
                   <p className="add">
-                    124,A Maa Shakti Apartment A1 BLOCK Paschim Vihar<br />
+                    124-A, Maa Shakti Apartment A1 BLOCK Paschim Vihar<br />
                     New Delhi, Delhi-110063
                   </p>
                 </p>
@@ -35,21 +35,21 @@ export default function home() {
 
             <div className="row mx-auto text-center px-5 w-75">
               <div className="img-div col px-auto">
-                <img className="size-image mx-auto p-0" src={pic} alt="about section drnikhil" />
-                <a className="btn btnhover btn-success w-50 mx-auto mt-3" href="/drnikhil">
-                  Dr. Nikhil Jain <> </><i className="bi bi-caret-right-fill"></i>
+                <img className="size-image mx-auto p-0" src={pic2} alt="about section 3" />
+                <a className="btn btnhover btn-success mx-auto mt-3" href='/drrajesh'>
+                  <b>Dr. Rajesh Kansal</b> <> </><i className="bi bi-caret-right-fill"></i>
                 </a>
               </div>
               <div className="img-div col px-auto">
                 <img className="size-image mx-auto p-0" src={pic3} alt="about section kansal" />
                 <a className="btn btnhover btn-success mx-auto mt-3 w-75 px-0" href='/drkhushboo'>
-                  Dr. Khushboo Kansal <> </><i className="bi bi-caret-right-fill"></i>
+                  <b>Dr. Khushboo Kansal</b> <> </><i className="bi bi-caret-right-fill"></i>
                 </a>
               </div>
               <div className="img-div col px-auto">
-                <img className="size-image mx-auto p-0" src={pic2} alt="about section 3" />
-                <a className="btn btnhover btn-success mx-auto mt-3" href='/drrajesh'>
-                  Dr. Rajesh Kansal <> </><i className="bi bi-caret-right-fill"></i>
+                <img className="size-image mx-auto p-0" src={pic} alt="about section drnikhil" />
+                <a className="btn btnhover btn-success w-50 mx-auto mt-3" href="/drnikhil">
+                  <b>Dr. Nikhil Jain</b> <> </><i className="bi bi-caret-right-fill"></i>
                 </a>
               </div>
             </div>
