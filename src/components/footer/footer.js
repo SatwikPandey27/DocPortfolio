@@ -15,12 +15,12 @@ export default function Footer() {
                 
                 <li className="list-group-item d-flex">
                   Monday - Saturday 
-                  <span>9:00 AM - 5:00 PM</span>
+                  <span>10:30 AM - 2:00 PM <br /> and <br/> 6:00 PM - 9:00 PM</span>
                 </li>
 
                 <li className="list-group-item d-flex">
                   Sunday
-                  <span>Closed</span>
+                  <span>11:00 AM to 1:00 PM</span>
                 </li>
 
               </ul>

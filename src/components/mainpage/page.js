@@ -8,7 +8,7 @@ import ContactUs from '../contact/contact'
 import Footer from '../footer/footer'
 // import About from '../about/about'
 import logo from '../../assets/logo2.png'
-import pic from '../../assets/Image1.jpeg'
+import pic from '../../assets/img1.jpeg'
 import pic2 from '../../assets/image2.jpeg'
 import pic3 from '../../assets/image3.jpeg'
 
@@ -83,6 +83,7 @@ export default function home() {
         <br />
         <br />
         <div id="contact"></div>
+        <br />
         <br />
         <br />
         {/* <hr className="mx-5 border-2 my-5 border-success-subtle"/> */}

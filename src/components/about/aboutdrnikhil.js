@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import pic from '../../assets/Image1.jpeg'
+import pic from '../../assets/img1.jpeg'
 import spine from '../../assets/spine.jpg'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
