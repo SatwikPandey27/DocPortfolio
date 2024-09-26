@@ -19,9 +19,10 @@
   margin: 0 auto;
 }
 
-.img-div {
-  position: relative;
-  top: 230px;
+.img-div1, .img-div2, .img-div3 {
+  max-width: 300px;
+  margin-top: -110px;
+  z-index: 20;
 }
 
 .images-top {
@@ -30,9 +31,9 @@
   z-index: 2;
 }
 
-#contact {
+/* #contact {
   margin-top: 100px;
-}
+} */
 
 .logo {
   position: absolute;
@@ -86,7 +87,15 @@
 }
 
 @media only screen and (max-width: 768px) {
-  /* Adjust for tablets and smaller devices */
+
+  .img-div1, .img-div2 {
+    max-width: 300px;
+    z-index: 20;
+  }
+  .img-div3{
+    margin-top: 20px;
+  }
+
   .clinic {
     font-size: 32px;
   }
@@ -97,10 +106,6 @@
 
   .logoS {
     width: 150px;
-  }
-
-  .img-div {
-    top: 100px;
   }
 
   .img-main {
@@ -120,25 +125,25 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  /* Adjust for small mobile devices */
-  .img-div {
-    position: relative;
-    top: 0;
+@media only screen and (max-width: 698px) {
+
+  .img-div1, .img-div2, .img-div3 {
+    max-width: 300px;
     margin-top: 20px;
+    z-index: 20;
   }
 
   .clinic {
-    font-size: 26.5px; /* Smaller text size for mobile */
+    font-size: 32px; /* Smaller text size for mobile */
     top: 20%;
   }
 
   .add {
-    font-size: 11px; /* Adjust additional text to fit smaller screen */
+    font-size: 18px; /* Adjust additional text to fit smaller screen */
   }
 
   .logo {
-    background: linear-gradient(to bottom right, rgba(0, 128, 0, 0.5), rgba(128, 128, 128, 0.5)); /* Increase transparency for better mobile visibility */
+    background: linear-gradient(to bottom right, rgba(0, 6, 128, 0.3), rgba(128, 128, 128, 0.25)); /* Increase transparency for better mobile visibility */
     font-size: 20px;
   }
 
@@ -148,14 +153,13 @@
 
   .logoS {
     width: 120px;
-    margin-top: 32px;
-    margin-left: -20px;
+    margin-top: 20px;
+    margin-left: -40px;
   }
 
   .img-main {
     height: 300px;
     width: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
@@ -166,8 +170,7 @@
   }
 
   .logo-img {
-    margin-top: 50px;
-    margin-left: 2px;
+    margin-top: 0px;
   }
 
   /* Make buttons stack on small screens */
@@ -177,7 +180,7 @@
   }
 
   .size-image {
-    width: 150px; /* Shrink images for mobile */
+    width: 200px; /* Shrink images for mobile */
   }
 }
 
