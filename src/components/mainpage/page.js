@@ -4,6 +4,7 @@ import Main from "../../assets/generalphysician.jpg";
 import col1 from "../../assets/scans.jpg";
 import col2 from "../../assets/scans1.jpg";
 import ContactUs from '../contact/contact'
+import ReviewCarousel from '../testimonials/testimonials'
 import Footer from '../footer/footer'
 import logo from '../../assets/logo2.png'
 import pic from '../../assets/img1.jpeg'
@@ -20,7 +21,7 @@ export default function home() {
               <div className="col-3 col-logo mt-5 ms-4">
                 <img loading="lazy" className="logoS border rounded-circle border-3 border-danger-subtle" src={logo} alt="logo here" />
               </div>
-              <div className="col ms-1 me-2 mt-5">
+              <div className="col">
                 <p className="clinic">
                   <b>Satyak Healthcare Clinic</b><br />
                   <p className="add">
@@ -45,31 +46,55 @@ export default function home() {
             </div>
           </div>
         </div>
+
+        <div id="team"></div>
+        <br />
+        <hr className="mx-5 border-2 mb-5 border-success-subtle"/>
+
         <div className="row mx-auto text-center px-5 justify-content-around">
-          <div className="img-div1 col-12 col-md-4">
-            <img className="size-image mx-auto" src={pic2} alt="about section 3" />
-            <a className="btn btnhover btn-success mx-auto mt-3" href='/drrajesh'>
-              <b>Dr. Rajesh Kansal</b> <> </><i className="bi bi-caret-right-fill"></i>
-            </a>
+          <h1 className="text-center">Our Team</h1>
+          <br />
+          <br />
+          <br />
+          <div class="card img-div1 col-12 col-md-4">
+            <img src={pic2} class="card-img-top pt-2" alt="about section 3"/>
+            <div class="card-body">
+              <h5 class="card-title">Dr. Rajesh Kansal</h5>
+              <p class="card-text px-0">General Physician, Paschim Vihar, Delhi <br /> 40 years of experience in general medicine</p>
+              <a href="/drrajesh" class="btn btn-primary">Know more <i className="bi bi-caret-right-fill"></i></a>
+            </div>
           </div>
-          <div className="img-div2 col-12 col-md-4">
-            <img className="size-image mx-auto" src={pic3} alt="about section kansal" />
-            <a className="btn btnhover btn-success mx-auto mt-3" href='/drkhushboo'>
-              <b>Dr. Khushboo Kansal</b> <> </><i className="bi bi-caret-right-fill"></i>
-            </a>
+          <div class="card img-div1 col-12 col-md-4">
+            <img src={pic3} class="card-img-top pt-2" alt="about section 3"/>
+            <div class="card-body">
+              <h5 class="card-title">Dr. Khushboo Kansal</h5>
+              <p class="card-text px-0">Consultant Psychiatrist <br /> MBBS, MD Psychiatry</p>
+              <br /><br />
+              <a href="/drkhushboo" class="btn btn-primary">Know more <i className="bi bi-caret-right-fill"></i></a>
+            </div>
           </div>
-          <div className="img-div3 col-12 col-md-4">
-            <img className="size-image mx-auto" src={pic} alt="about section drnikhil" />
-            <a className="btn btnhover btn-success mx-auto mt-3" href="/drnikhil">
-              <b>Dr. Nikhil Jain</b> <> </><i className="bi bi-caret-right-fill"></i>
-            </a>
+          <div class="card img-div1 col-12 col-md-4">
+            <img src={pic} class="card-img-top pt-2" alt="about section 3"/>
+            <div class="card-body">
+              <h5 class="card-title">Dr. Nikhil Jain</h5>
+              <p class="card-text px-0">Consultant spine deformity (scoliosis) & endoscopy surgeon <br /> MBBS, MS Ortho, FNB Spine</p>
+              <a href="/drnikhil" class="btn btn-primary">Know more <i className="bi bi-caret-right-fill"></i></a>
+            </div>
           </div>
+        </div>
+        <div id="testimonials"></div>
+        <br />
+        <hr className="mx-5 border-2 mb-5 border-success-subtle"/>
+        <div>
+          <h1 className="text-center">Patient Testimonials</h1>
+          <br />
+          <ReviewCarousel/>
         </div>
         <div id="contact"></div>
         <br />
         <hr className="mx-5 border-2 mb-5 border-success-subtle"/>
         <div>
-          <h1 className="text-center">Contact Me</h1>
+          <h1 className="text-center">Contact Us</h1>
           <br />
           <ContactUs/>
         </div>

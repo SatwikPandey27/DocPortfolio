@@ -1,0 +1,97 @@
+import './testimonials.css';
+import React, { useEffect, useState } from 'react';
+
+export default function Testimonials() {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const reviews = [
+    {
+      doctor: "Dr. Rajesh Kansal (General Physician)",
+      text: "I came across Doctor Rajesh Kansal through Practo. Then I checked his google reviews, since it’s always a bit of uncertainty trying on a new Doctor. However, when I met with doctor Rajesh, he was really humble and friendly and not like other doctors who put stress on a patient’s mental health. He didn’t give me any unnecessary medication or tests. Just told me certain changes in diet and day to day life to fix my issues. Highly recommended doctor for anyone looking for a good doctor in Delhi.",
+      patient: "~ Swabhiman Aditya"
+    },
+    {
+      doctor: "Dr. Khushboo Kansal (Psychiatrist)",
+      text: "I had previously consulted 5 doctors, but the medicines did not work. Also, none of the doctors would listen to what was going on in my head. But Dr. Khushboo is a miracle healer. She not only listens to you, but her treatment works like magic. I am way better now. Thank you so much Dr. Khushboo.",
+      patient: "~ Akanksha Malik"
+    },
+    {
+      doctor: "Dr. Rajesh Kansal (General Physician)",
+      text: "Dr. You are a messenger of God for us. You treated my mother so well during the COVID period that words are short to express my gratitude for you. Thank you so much for timely follow-ups. You were available day and night for us. Your medication and timely examination were so good that mom has fully recovered. Thank you so much, Dr.",
+      patient: "~ Vishwas Choudhary"
+    },
+    {
+      doctor: "Dr. Khushboo Kansal (Psychiatrist)",
+      text: "Dr. Khushboo is a very caring & compassionate doctor. She has extensive knowledge of her field. The best part is she listens to patients with a lot of patience, which itself has a positive impact on the patient's mental health. After changing many doctors, it was her treatment that helped my father cope with his depression. Thank you, doc.",
+      patient: "~ Akshita Singh"
+    },
+    {
+      doctor: "Dr. Nikhil Jain (FNB Spine Surgery)",
+      text: "Dr Nikhil is a thorough knowledgeable specialist who listens to patients very calmly n prescribes medication what suits best for the patient. My experience with him have always been cheerful.",
+      patient: "~ Vijay Jain"
+    },
+    {
+      doctor: "Dr. Rajesh Kansal (General Physician)",
+      text: "I came across Dr. Rajesh Kansal during the pandemic after experiencing flu symptoms for three days. With no prior recommendations, I reached out to him, and he confidently identified my condition as COVID without needing a test. He provided effective treatment that helped both me and my mother recover. Dr. Rajesh is truly a lifesaver—patient, friendly, and easily approachable. I highly recommend him!",
+      patient: "~ Rasneet Kaur Kohli"
+    },
+    {
+      doctor: "Dr. Nikhil Jain (FNB - Spine Surgery)",
+      text: "I was suffering from L4/L5 disk problem. I took an appointment with Dr Nikhil Jain regarding the issue Iam facing with. I was optimistic towards the successful surgery at MGS hospital,Delhi, I was referred through Dr Sushil Agarwal(Orthopaedic). Soon after the surgery I felt the changes and in a short period of time the tingling pain disappeared from my left buttock. Now feeling normal as before, but Following the advices. Thank you Nikhil sir.",
+      patient: "~ Abinash Ranjan Nishank"
+    },
+  ];
+
+  useEffect(() => {
+    // Ensure jQuery and owlCarousel are loaded
+    if (window.$ && window.$.fn.owlCarousel) {
+      window.$('.owl-carousel').owlCarousel({
+        loop: true,
+        center: true,
+        margin: 18,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        nav: true,
+        navText: [
+          "<div class='custom-nav-left'><i class='bi bi-caret-left-fill'></i></div>",
+          "<div class='custom-nav-right'><i class='bi bi-caret-right-fill'></i></div>"
+        ],
+        responsiveClass: true,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 2 },
+          1000: { items: 2 }
+        }
+      });
+    }
+  }, []);
+
+  const toggleExpand = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
+  return (
+    <div className='row main-container mx-auto'>
+      <div className="owl-carousel owl-theme">
+      {reviews.map((review, index) => (
+        <div key={index} className="item p-3 text-center border border-1 border-black">
+          <h3 className='pt-2'>Visited {review.doctor}</h3>
+          <p style={{
+            maxHeight: expandedIndex === index ? 'none' : '60px',
+            overflow: 'hidden',
+            transition: 'max-height 0.3s ease-in-out'
+          }}>
+            {review.text}
+          </p>
+          <div className="button-container">
+            <button onClick={() => toggleExpand(index)} className="read-more-btn">
+              {expandedIndex === index ? 'Read Less' : 'Read More'}
+            </button>
+          </div>
+          <p>{review.patient}</p>
+        </div>
+      ))}
+      </div>
+    </div>
+  );
+}

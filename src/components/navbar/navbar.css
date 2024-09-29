@@ -1,13 +1,17 @@
 .navbar{
   padding: 10px 5px;
-  height: 76px;
+  min-height: 76px;
   z-index: 1000;
   opacity: 97%;
-  background: #518590;
+  background: #4A90E2;
 }
 
 .btn{
-  background: #518590 !important;
+  background: #4A90E2 !important;
+}
+
+.dropdown{
+  cursor: pointer;
 }
 
 .navbar a,
@@ -36,6 +40,7 @@
 .menu {
   display: flex;
   justify-content: center;
+  align-items: center; /* Ensure menu items are vertically centered */
 }
 
 .menu a {
@@ -68,4 +73,16 @@
 .menu a:hover::before,
 .dropdown:hover::before {
   transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Stack items in a column */
+    align-items: center;    /* Center items */
+  }
+  
+  .menu li {
+    margin-right: 0;       /* Remove right margin for stacked layout */
+    margin-bottom: 10px;   /* Optional: Add space between items */
+  }
 }
