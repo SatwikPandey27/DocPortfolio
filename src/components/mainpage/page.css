@@ -60,8 +60,9 @@
 }
 
 .add {
+  font-weight: 700;
   font-size: 30px;
-  -webkit-text-stroke: 0px black;
+  -webkit-text-stroke: 1.5px black;
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -73,6 +74,7 @@
 
   .add {
     font-size: 20px;
+    -webkit-text-stroke: 0.8px black;
   }
 
   .logoS {
@@ -88,14 +90,14 @@
   }
 }
 
-@media only screen and (max-width: 778px) {
+@media only screen and (max-width: 746px) {
 
   .img-div1, .img-div2 {
     max-width: 300px;
     z-index: 20;
   }
   .img-div3{
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .clinic {
@@ -104,6 +106,7 @@
 
   .add {
     font-size: 16px;
+    -webkit-text-stroke: 0.2px black;
   }
 
   .logoS {

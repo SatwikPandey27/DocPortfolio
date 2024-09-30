@@ -73,7 +73,7 @@ export default function home() {
               <a href="/drkhushboo" class="btn btn-primary">Know more <i className="bi bi-caret-right-fill"></i></a>
             </div>
           </div>
-          <div class="card img-div1 col-12 col-md-4">
+          <div class="card img-div3 col-12 col-md-4">
             <img src={pic} class="card-img-top pt-2" alt="about section 3"/>
             <div class="card-body">
               <h5 class="card-title">Dr. Nikhil Jain</h5>
