@@ -1,6 +1,6 @@
 .navbar{
-  padding: 10px 5px;
-  min-height: 76px;
+  padding: 3px;
+  min-height: 69px;
   z-index: 1000;
   opacity: 97%;
   background: #4A90E2;
@@ -22,10 +22,37 @@
   transition: text-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.navbar a:hover,
+.navbar-brand {
+  color: whitesmoke !important; /* Set the desired default color */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  z-index: 100000;
+}
+
+.navbar-brand:hover {
+  color: whitesmoke !important; /* Keep the same color on hover */
+  text-shadow: none !important; /* Ensure no text shadow on hover */
+  cursor: pointer;
+}
+
+.logo-size{
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.navbar a:hover{
+  cursor: pointer;
+}
+
+.navbar a:hover:not(.navbar-brand) {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 4); /* Apply shadow effect only to non-brand links */
+}
+
 .dropdown-toggle:hover {
   color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 4); /* Shadow effect on hover */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 4); /* Shadow effect on hover for other nav links */
 }
 
 .dropdown-menu{
@@ -37,12 +64,6 @@
   text-decoration: none;
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Ensure menu items are vertically centered */
-}
-
 .menu a {
   position: relative;
   display: block;
@@ -50,9 +71,16 @@
   padding-bottom: 1px;
 }
 
-.menu li{
-  margin-right: 40px;
+.menu {
+  display: flex;
+  justify-content: flex-end; /* Ensure items are aligned to the right */
+  align-items: center; /* Center items vertically */
 }
+
+.menu li {
+  margin-right: 40px; /* Spacing between the list items */
+}
+
 
 .menu a::before,
 .dropdown::before {

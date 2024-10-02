@@ -1,10 +1,14 @@
 import React from "react";
 import "./navbar.css";
+import logo from '../../assets/logo2.png';
 
-export default function navbar() {
+export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg fixed-top shadow-lg h-20 border-1 border-bottom border-danger-subtle">
       <div className="container-fluid">
+        <a className="navbar-brand" href="/">
+          <img className='logo-size' src={logo} alt="logo" />Satyak Healthcare Clinic
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -16,7 +20,7 @@ export default function navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav mx-auto menu">
+          <ul className="navbar-nav ms-auto menu"> {/* Use ms-auto class to align right */}
             <li className="nav-item active">
               <a className="nav-link fs-5" href="/">
                 Home
@@ -27,16 +31,6 @@ export default function navbar() {
                 Our Team
               </a>
             </li>
-            {/* <li className="nav-item dropdown mt-1">
-              <span className="dropdown-toggle border-0 fs-5" data-bs-toggle="dropdown" aria-expanded="false" href="#">
-                About Us
-              </span>
-              <ul className="dropdown-menu border border border-dark-subtle border-2">
-                <li className="mx-auto"><a className="dropdown-item mx-auto w-100" href="/drnikhil">Dr. Nikhil Jain</a></li>
-                <li className="mx-auto"><a className="dropdown-item mx-auto w-100" href="/drrajesh">Dr. Rajesh Kansal</a></li>
-                <li className="mx-auto"><a className="dropdown-item mx-auto w-100" href="/drkhushboo">Dr. Khushboo Kansal</a></li>
-              </ul>
-            </li> */}
             <li className="nav-item">
               <a className="nav-link fs-5" href="#testimonials">
                 Testimonials
