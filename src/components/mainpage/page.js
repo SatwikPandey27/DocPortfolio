@@ -19,8 +19,8 @@ import pic3 from '../../assets/image3.jpeg'
 export default function home() {
   return (
     <>
-      <div className="home">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div className="home">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src={slide4} class="d-block w-100" alt="..."/>
@@ -35,15 +35,6 @@ export default function home() {
             <img className="img-size" src={slide3} class="d-block w-100" alt="..."/>
           </div>
         </div>
-        {/* Buttons are removed or commented out */}
-        {/* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button> */}
       </div>
 
       <div id="treatment"></div>
