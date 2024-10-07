@@ -126,15 +126,21 @@
   transform: scaleX(1);
 }
 
-@media (max-width: 975px) {
+@media (max-width: 1350px) {
   .navbar{
     top: 50px;
   }
 }
 
-@media (max-width: 477px) {
+@media (max-width: 641px) {
   .navbar{
     top: 69px;
+  }
+}
+
+@media (max-width: 453px) {
+  .navbar{
+    top: 89px;
   }
 }
 

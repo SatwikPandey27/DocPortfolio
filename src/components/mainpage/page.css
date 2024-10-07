@@ -4,15 +4,21 @@
   background: #F7F7F7;
 }
 
-@media (max-width: 975px) {
+@media (max-width: 1350px) {
   .home{
     margin-top: 118px;
   }
 }
 
-@media (max-width: 477px) {
+@media (max-width: 641px) {
   .home{
     margin-top: 137px;
+  }
+}
+
+@media (max-width: 453px) {
+  .home{
+    margin-top: 158px;
   }
 }
 

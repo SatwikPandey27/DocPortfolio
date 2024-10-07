@@ -9,11 +9,11 @@ export default function Navbar() {
       <div className="top-bar fixed-top">
         <div className="container-fluid d-flex justify-content-between align-items-center">
           <div>
-            <span>📞 Contact: +91-9876543210 | </span>
-            <span>🕒 Timings: Mon-Fri 9:00 AM - 7:00 PM | Sat 10:00 AM - 2:00 PM</span>
+            <span>📞 Contact: +91 88105 60977 | </span>
+            <span>🕒 Timings: 10:30 AM - 2:00 PM and 6:00 PM - 9:00 PM | Sat 10:00 AM - 2:00 PM</span>
           </div>
           <div>
-            <span>🏥 Address: 123 Health Street, New Delhi, India</span>
+            <span>🏥 Address: 124,A MaaShakti Apartments, A1 Block, Paschim Vihar, New Delhi, Delhi 110063</span>
           </div>
         </div>
       </div>
