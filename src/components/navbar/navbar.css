@@ -19,6 +19,13 @@
   }
 }
 
+.nodec{
+  text-decoration: none;
+  color: white;
+}
+.nodec:hover{
+  color: white;
+}
 
 .navbar{
   padding: 3px;

@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="top-bar fixed-top">
         <div className="container-fluid d-flex justify-content-between align-items-center">
           <div>
-            <span>📞 Contact: +91 88105 60977 | </span>
+            <span> <a href="tel:+91 88105 60977" className="nodec">📞 Contact: +91 88105 60977</a> | </span>
             <span>🕒 Timings: 10:30 AM - 2:00 PM and 6:00 PM - 9:00 PM | Sat 10:00 AM - 2:00 PM</span>
           </div>
           <div>
