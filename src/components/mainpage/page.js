@@ -39,6 +39,7 @@ export default function home() {
 
       <div id="treatment"></div>
         <br />
+        <br />
         <hr className="mx-5 border-2 mb-5 border-success-subtle"/>
         <div>
           <h1 className="text-center">Conditions Treated</h1>
@@ -48,6 +49,7 @@ export default function home() {
 
 
         <div id="team"></div>
+        <br />
         <br />
         <hr className="mx-5 border-2 mb-5 border-success-subtle"/>
 
@@ -65,6 +67,8 @@ export default function home() {
               <br /> 40 years of experience in general medicine</p>
               <br />
               <br />
+              <br />
+              <br />
               <a href="/drrajesh" class="btn btn-primary">Know more <i className="bi bi-caret-right-fill"></i></a>
             </div>
           </div>
@@ -76,6 +80,8 @@ export default function home() {
                 Consultant Integrative Psychiatrist <br />
                 Lead in Perinatal Mental Health Services <br />
                 MBBS, MD Psychiatry, MRC Psych (UK), PMH-C</p>
+              <a href="http://www.linkedin.com/in/khushboo-kansal-14749252" className="bi-linkedin socials-specific"> </a>
+                <br />
               <a href="/drkhushboo" class="btn btn-primary">Know more <i className="bi bi-caret-right-fill"></i></a>
             </div>
           </div>
@@ -83,16 +89,17 @@ export default function home() {
             <img src={pic} class="card-img-top pt-2" alt="about section 3"/>
             <div class="card-body">
               <h5 class="card-title">Dr. Nikhil Jain</h5>
-              <p class="card-text px-0">Consultant spine deformity & endoscopy surgeon <br /> MBBS, MS Ortho, FNB Spine</p>
+              <p class="card-text px-0">MBBS <br /> MS Ortho, FNB Spine Surgery <br /> Fellowship MUH Hospital, Sydney, Australi <br /> Fellowship QMC, Nottingham, UK</p>
+              <br />
               <a href="https://www.linkedin.com/company/drnikhiljain" className="bi-linkedin socials-specific"> </a>
               <a href="https://www.youtube.com/@Dr.NikhilJain" className="bi-youtube socials-specific"> </a>
-              <br />
               <br />
               <a href="/drnikhil" class="btn btn-primary">Know more <i className="bi bi-caret-right-fill"></i></a>
             </div>
           </div>
         </div>
         <div id="testimonials"></div>
+        <br />
         <br />
         <hr className="mx-5 border-2 mb-5 border-success-subtle"/>
         <div>
@@ -101,6 +108,7 @@ export default function home() {
           <ReviewCarousel/>
         </div>
         <div id="contact"></div>
+        <br />
         <br />
         <hr className="mx-5 border-2 mb-5 border-success-subtle"/>
         <div>
