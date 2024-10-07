@@ -1,7 +1,19 @@
 .home {
-  margin-top: 66px;
+  margin-top: 98px;
   overflow: hidden;
   background: #F7F7F7;
+}
+
+@media (max-width: 975px) {
+  .home{
+    margin-top: 118px;
+  }
+}
+
+@media (max-width: 477px) {
+  .home{
+    margin-top: 137px;
+  }
 }
 
 .socials-specific {

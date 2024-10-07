@@ -1,9 +1,33 @@
+.top-bar {
+  background-color: #3378c7;
+  color: whitesmoke;
+  padding: 5px 0;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1001; /* Ensure it sits above the navbar */
+}
+
+.top-bar span {
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    font-size: 12px;
+    text-align: left;
+    padding: 10px;
+  }
+}
+
+
 .navbar{
   padding: 3px;
   min-height: 69px;
   z-index: 1000;
   opacity: 97%;
   background: #3378c7;
+  position: fixed;
+  top: 30px;
 }
 
 .btn{
@@ -100,6 +124,18 @@
 .menu a:hover::before,
 .dropdown:hover::before {
   transform: scaleX(1);
+}
+
+@media (max-width: 975px) {
+  .navbar{
+    top: 50px;
+  }
+}
+
+@media (max-width: 477px) {
+  .navbar{
+    top: 69px;
+  }
 }
 
 @media (max-width: 768px) {
