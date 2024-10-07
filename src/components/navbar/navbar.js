@@ -26,6 +26,18 @@ export default function Navbar() {
                 Home
               </a>
             </li>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle fs-5" href="#treatment" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Conditions Treated
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a className="dropdown-item" href="#treatment">Spine Conditions</a></li>
+                <li><a className="dropdown-item" href="#treatment">Mental Health</a></li>
+                <li><a className="dropdown-item" href="#treatment">General Health</a></li>
+                <li><a className="dropdown-item" href="#treatment">Women’s Health</a></li>
+                <li><a className="dropdown-item" href="#treatment">Geriatric Health</a></li>
+              </ul>
+            </li>
             <li className="nav-item active">
               <a className="nav-link fs-5" href="#team">
                 Our Team

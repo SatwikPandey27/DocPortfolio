@@ -1,13 +1,13 @@
 import React from 'react'
 import './about.css'
-import pic from '../../assets/image3.jpeg'
-import psy from '../../assets/psych2.jpeg'
+import pic from '../../assets/abt2.png'
+// import psy from '../../assets/psych2.jpeg'
 
 export default function AboutDrKhushboo() {
   return (
     <div className='main'>
-    <div className="row row1 mt-5 pt-3"><img className='pe-0' src={psy} alt="about1" /></div>
-    <div className="row main-row mx-auto">
+    <div className="row row1 mt-5 pt-3"><img className='pe-0' src={pic} alt="about1" /></div>
+    {/* <div className="row main-row mx-auto">
       <div className="col mx-auto me-5 imgpicalign">
         <img src={pic} alt="dr khushboo here" className="imgfluid border rounded-circle border-black border-1 imgpic" />
       </div>
@@ -23,7 +23,7 @@ export default function AboutDrKhushboo() {
         </p>
       </div>
     </div>
-    </div>
+    </div> */}
     <div className='row media mt-5'>
       <div className="col-9 mx-auto imgtextalign">
         <h1>Consultant Psychiatrist</h1>

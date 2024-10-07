@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
-import pic from '../../assets/img1.jpeg'
-import spine from '../../assets/spine.jpg'
+import pic from '../../assets/abt1.png'
+// import spine from '../../assets/spine.jpg'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -21,8 +21,8 @@ export default function AboutDrNikhil() {
 
   return (
     <div className='main'>
-    <div className="row row1"><img className='pe-0' src={spine} alt="about1" /></div>
-    <div className="row main-row mx-auto">
+    <div className="row row1"><img className='pe-0 img-fluid' src={pic} alt="about1" /></div>
+    {/* <div className="row main-row mx-auto">
       <div className="col-2 mx-auto me-5 imgpicalign">
         <img src={pic} alt="dr nikhil here" className="imgfluid border rounded-circle border-black border-1 imgpic" />
       </div>
@@ -39,7 +39,7 @@ export default function AboutDrNikhil() {
         </p>
       </div>
     </div>
-    </div>
+    </div> */}
     <div className='row media mt-5'>
       <div className="col-9 mx-auto imgtextalign">
           <h1>Consultant Spine Deformity & Endoscopic Spine Surgeon</h1>
@@ -58,6 +58,26 @@ export default function AboutDrNikhil() {
               <li>Honored with the "Best Fellow Award" from Sir Ganga Ram Hospital, New Delhi.</li>
           </ul>
 
+          <h2>Talks & Publications</h2>
+          <ul>
+            <li>‘Clinical outcome of interbody fusion for discogenic back pain – prospective study with 2 year follow up’ BASS 2024, 20-22nd March, Bournemouth, UK.</li>
+            <li>‘Vascular injury in anterior lumbar fusion surgeries’, Spineweek 2023, 1-5 May, 2023, Melbourne, Australia.</li>
+            <li>‘Understanding and improving lordotic correction in lumbar spine during spinal fusion’ DDU 2022 - Sydney, Australia 5-6th August 2022.</li>
+            <li>‘Lumbar Canal Stenosis: a clinico-radiological analysis’ at 12TH Annual Conference of ‘Asia Pacific Cervical Spine Society’, New Delhi, 15th -17th November, 2018.</li>
+            <li>‘Lumbar Canal Stenosis: a clinico-radiological analysis’ at annual meeting of Instructional Course in Spine Amritsar, 9th – 11th August 2018.</li>
+            <li>‘Comminuted fractures in clavicle: operative vs non-operative management’ at ROSACON January 17-19, 2014, Ranthambore, Rajasthan.</li>
+            <li>‘A case series of acute painless bilateral foot drop without cauda equina syndrome’ published in Journal of Orthopedic Case Reports, October 2021.</li>
+            <li>‘Occipitocervical fusion and dysphagia. The role of head neck alignment: a case report’ published in Journal of Clinical Orthopaedics and Trauma, 4th August, 2021.</li>
+            <li>‘A rare loss of intraoperative neuro-monitoring signals with laterally misplaced pedicle screw: Case Report’ published in JSM Clinical case reports, 4th Aug, 2020; ISSN: 2373-9819.</li>
+            <li>‘Lumbar Disc Herniation: A review article’ accepted in IP International Journal of Orthopaedic Rheumatology 10/05/2020. Print ISSN: 2581-8112; Online ISSN: 2581-9151.</li>
+            <li>‘Lumbar Canal Stenosis: a prospective clinico-radiological analysis’ Original article, published online in Journal of Neurological Surgery Part A: Central European Neurosurgery, 27th Feb 2020.</li>
+            <li>‘Posterior Surgical options for Spondylotic Cervical Myelopathy: Review article’ published in Indian Spine Journal, Vol. 2, January -June 2019.</li>
+            <li>Cryptococcosis of Thoracic Vertebra Mimicking Tuberculosis: A Case Report published in Surgical Neurology International, May 2019.</li>
+            <li>Case Report: Odontoid fracture with missed diagnosis of Transverse Atlantal Ligament (TAL) injury resulting in late‐onset instability published in Surgical Neurology International, November 2018.</li>
+            <li>‘Tibiocalcaneal Arthrodesis using Intramedullary Nail for Severe Rigid Equinovarus Foot Deformity in Adults’ Original article, published in Journal of Orthopedics, Traumatology and Rehabilitation, Vol 9, May 2017.</li>
+            <li>‘Comparative study on management of clavicle fractures treated conservatively or by plate fixation’ Original article, published in Journal of Orthopedics, Traumatology and Rehabilitation, Vol.5, Nov. 2012.</li>
+          </ul>
+<br />
           <p>I am passionate about advancing spinal care and am dedicated to providing my patients with the most effective, evidence-based treatment options.</p>
 
           <h2>Conditions Treated</h2>

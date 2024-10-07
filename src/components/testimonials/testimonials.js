@@ -42,6 +42,24 @@ export default function Testimonials() {
     },
   ];
 
+  // const youtubeVideos = [
+  //   {
+  //     id: 1,
+  //     title: "Doctor Testimonial 1",
+  //     url: "https://www.youtube.com/embed/VIDEO_ID_1",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Doctor Testimonial 2",
+  //     url: "https://www.youtube.com/embed/VIDEO_ID_2",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Doctor Testimonial 3",
+  //     url: "https://www.youtube.com/embed/VIDEO_ID_3",
+  //   }
+  // ];
+
   useEffect(() => {
     // Ensure jQuery and owlCarousel are loaded
     if (window.$ && window.$.fn.owlCarousel) {
@@ -57,6 +75,22 @@ export default function Testimonials() {
           "<div class='custom-nav-right'><i class='bi bi-caret-right-fill'></i></div>"
         ],
         responsiveClass: true,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 2 },
+          1000: { items: 2 }
+        }
+      });
+
+      window.$('.owl-carousel-videos').owlCarousel({
+        loop: true,
+        margin: 18,
+        autoplay: false,
+        nav: true,
+        navText: [
+          "<div class='custom-nav-left'><i class='bi bi-caret-left-fill'></i></div>",
+          "<div class='custom-nav-right'><i class='bi bi-caret-right-fill'></i></div>"
+        ],
         responsive: {
           0: { items: 1 },
           600: { items: 2 },
@@ -92,6 +126,24 @@ export default function Testimonials() {
         </div>
       ))}
       </div>
+
+      {/* <h2 className="mt-5">Doctor Video Testimonials</h2>
+      <div className="owl-carousel owl-theme owl-carousel-videos">
+        {youtubeVideos.map((video) => (
+          <div key={video.id} className="item p-3">
+            <iframe
+              width="100%"
+              height="315"
+              src={video.url}
+              title={video.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        ))}
+      </div> */}
+
     </div>
   );
 }

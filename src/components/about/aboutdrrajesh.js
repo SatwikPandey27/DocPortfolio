@@ -1,13 +1,13 @@
 import React from 'react'
 import './about.css'
-import pic from '../../assets/image2.jpeg'
-import gp from '../../assets/gp.jpg'
+import pic from '../../assets/abt3.png'
+// import gp from '../../assets/gp.jpg'
 
 export default function AboutDrRajesh() {
   return (
     <div className='main'>
-    <div className="row row1"><img className='pe-0 mt-5 pt-4' src={gp} alt="about1" /></div>
-    <div className="row main-row mx-auto">
+    <div className="row row1"><img className='pe-0' src={pic} alt="about1" /></div>
+    {/* <div className="row main-row mx-auto">
       <div className="col-2 mx-auto me-5 imgpicalign">
         <img src={pic} alt="dr rajesh here" className="imgfluid border rounded-circle border-black border-1 imgpic" />
       </div>
@@ -22,7 +22,7 @@ export default function AboutDrRajesh() {
           </p>
       </div>
       </div>
-    </div>
+    </div> */}
     <div className='row media mt-5'>
       <div className="col-9 mx-auto imgtextalign">
         <h1>General Physician in Paschim Vihar, Delhi</h1>
