@@ -1,31 +1,38 @@
 import React from 'react'
 import './about.css'
-import pic from '../../assets/abt2.png'
-// import psy from '../../assets/psych2.jpeg'
+import self from '../../assets/image3.jpeg'
+import slide1 from '../../assets/drkhushboo1.jpeg'
+import slide2 from '../../assets/drkhushboo2.jpeg'
+import slide3 from '../../assets/drkhushboo3.jpeg'
+import slide4 from '../../assets/drkhushboo4.jpeg'
 
 export default function AboutDrKhushboo() {
   return (
     <div className='main'>
-    <div className="row row1 mt-5 pt-3"><img className='pe-0' src={pic} alt="about1" /></div>
-    {/* <div className="row main-row mx-auto">
-      <div className="col mx-auto me-5 imgpicalign">
-        <img src={pic} alt="dr khushboo here" className="imgfluid border rounded-circle border-black border-1 imgpic" />
+      <div className="row row1">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src={slide1} class="d-block w-100" alt="..."/>
+              </div>
+              <div class="carousel-item">
+                <img className="img-size" src={slide2} class="d-block w-100" alt="..."/>
+              </div>
+              <div class="carousel-item">
+                <img className="img-size" src={slide3} class="d-block w-100" alt="..."/>
+              </div>
+              <div class="carousel-item">
+                <img className="img-size" src={slide4} class="d-block w-100" alt="..."/>
+              </div>
+              {/* <div class="carousel-item">
+                <img className="img-size" src={slide5} class="d-block w-100" alt="..."/>
+              </div> */}
+            </div>
+          </div>
       </div>
-      <div className="background-container pt-0 col-9 ms-5 ps-5">
-      <br />
-      <div className='text-content'>
-        <p>
-          <div className='fs-1 pb-1'>Dr. Khushboo Kansal</div>
-            Consultant Psychiatrist <br />
-            MBBS, MD Psychiatry <br />
-            Membership of the Royal College of Psychiatrists, England (MRCPsych)
-            Perinatal Mental Health Certification (PMH-C), Postpartum Support International <br />
-        </p>
-      </div>
-    </div>
-    </div> */}
-    <div className='row media mt-5'>
-      <div className="col-9 mx-auto imgtextalign">
+    <div className='row'>
+      <div className="col-5 mt-0 mx-auto"><img className='img-fluid' src={self} alt="drnikhil" /></div>
+      <div className="col-7 imgtextalign mt-5 pe-4">
         <h1>Consultant Psychiatrist</h1>
 
         <p>I am a consultant psychiatrist with a decade of clinical experience in mental health. After completing my MBBS and MD in psychiatry from reputed medical colleges in India, I worked at various private and government hospitals across Delhi NCR.</p>

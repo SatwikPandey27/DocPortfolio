@@ -139,13 +139,13 @@
   }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 639px) {
   .navbar{
     top: 69px;
   }
 }
 
-@media (max-width: 453px) {
+@media (max-width: 455px) {
   .navbar{
     top: 89px;
   }

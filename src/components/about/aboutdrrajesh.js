@@ -1,30 +1,27 @@
 import React from 'react'
 import './about.css'
-import pic from '../../assets/abt3.png'
-// import gp from '../../assets/gp.jpg'
+import self from '../../assets/image2.jpeg'
+import slide1 from '../../assets/drrajesh1.jpeg'
+import slide2 from '../../assets/drrajesh2.jpeg'
 
 export default function AboutDrRajesh() {
   return (
     <div className='main'>
-    <div className="row row1"><img className='pe-0' src={pic} alt="about1" /></div>
-    {/* <div className="row main-row mx-auto">
-      <div className="col-2 mx-auto me-5 imgpicalign">
-        <img src={pic} alt="dr rajesh here" className="imgfluid border rounded-circle border-black border-1 imgpic" />
+      <div className="row row1">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src={slide1} class="d-block w-100" alt="..."/>
+              </div>
+              <div class="carousel-item">
+                <img className="img-size" src={slide2} class="d-block w-100" alt="..."/>
+              </div>
+            </div>
+          </div>
       </div>
-      <div className="background-container pt-0 col-9 p-5 ms-auto">
-      <br />
-      <div className='text-content'>
-        <p>
-          <div className='fs-1 pb-1'>Dr. Rajesh Kansal</div>
-          General Physician, Paschim Vihar, Delhi <br />
-          MBBS, Sardar Patel Medical College (1984) <br />
-          40 years of experience in general medicine <br />
-          </p>
-      </div>
-      </div>
-    </div> */}
-    <div className='row media mt-5'>
-      <div className="col-9 mx-auto imgtextalign">
+    <div className='row'>
+      <div className="col-5 mt-1 mx-auto"><img className='img-fluid' src={self} alt="drnikhil" /></div>
+      <div className="col-7 imgtextalign mt-5 pe-4">
         <h1>General Physician in Paschim Vihar, Delhi</h1>
 
         <p>Dr. Rajesh Kansal is a seasoned doctor with 40 years of experience in the medical field. He completed his MBBS from Sardar Patel Medical College in 1984 and has since gained extensive expertise in treating a wide range of general medical conditions. Over the course of his career, he has built a reputation for providing comprehensive and compassionate care to patients of all ages.</p>

@@ -1,13 +1,16 @@
 import React from 'react'
 import './about.css'
-import pic from '../../assets/abt1.png'
-// import spine from '../../assets/spine.jpg'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import '../footer/footer.css'
+import self from '../../assets/img1dn.jpeg'
+import slide1 from '../../assets/drnikhil1.jpeg'
+import slide2 from '../../assets/drnikhil11.jpeg'
+import slide3 from '../../assets/drnikhil10.jpeg'
+import slide4 from '../../assets/drnikhil7.png'
 
 export default function AboutDrNikhil() {
   let DefaultIcon = L.icon({
@@ -21,27 +24,30 @@ export default function AboutDrNikhil() {
 
   return (
     <div className='main'>
-    <div className="row row1"><img className='pe-0 img-fluid' src={pic} alt="about1" /></div>
-    {/* <div className="row main-row mx-auto">
-      <div className="col-2 mx-auto me-5 imgpicalign">
-        <img src={pic} alt="dr nikhil here" className="imgfluid border rounded-circle border-black border-1 imgpic" />
+      <div className="row row1">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src={slide1} class="d-block w-100" alt="..."/>
+              </div>
+              <div class="carousel-item">
+                <img className="img-size" src={slide2} class="d-block w-100" alt="..."/>
+              </div>
+              <div class="carousel-item">
+                <img className="img-size" src={slide3} class="d-block w-100" alt="..."/>
+              </div>
+              <div class="carousel-item">
+                <img className="img-size" src={slide4} class="d-block w-100" alt="..."/>
+              </div>
+              {/* <div class="carousel-item">
+                <img className="img-size" src={slide5} class="d-block w-100" alt="..."/>
+              </div> */}
+            </div>
+          </div>
       </div>
-      <div className="background-containern pt-0 col-9 ms-5 p-5 pb-2">
-      <br />
-      <div className='text-content'>
-        <p>
-          <div className='fs-1 pb-1'>Dr. Nikhil Jain</div>
-          Spine deformity (scoliosis) & endoscopy surgeon <br />
-          MBBS, MS Ortho, FNB Spine <br />
-          Fellowship Macquarie University Hospital, Sydney, Australia. <br />
-          Fellowship Queen’s Medical Center, Nottingham, UK (Royal College of Surgeons England br & Royal College of Surgeons Edinburgh). <br />
-          Call - +91-9910668831
-        </p>
-      </div>
-    </div>
-    </div> */}
-    <div className='row media mt-5'>
-      <div className="col-9 mx-auto imgtextalign">
+    <div className='row'>
+      <div className="col-5 mt-0 mx-auto"><img className='img-fluid' src={self} alt="drnikhil" /></div>
+      <div className="col-7 imgtextalign mt-5 pe-4">
           <h1>Consultant Spine Deformity & Endoscopic Spine Surgeon</h1>
 
           <p>With extensive training in advanced spine surgery, I am a specialized consultant in spine deformities and endoscopy. My qualifications include an FNB in Spine Surgery from Sir Ganga Ram Hospital, New Delhi, along with prestigious fellowships in Complex Spine Surgery from Macquarie University, Sydney, and Advanced Spine Surgery from Queen’s Medical Centre, Nottingham, UK.</p>
