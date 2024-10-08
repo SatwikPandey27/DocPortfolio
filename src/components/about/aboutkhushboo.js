@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import self from '../../assets/image3.jpeg'
+import abt2 from '../../assets/abt2.png'
 import slide1 from '../../assets/drkhushboo1.jpeg'
 import slide2 from '../../assets/drkhushboo2.jpeg'
 import slide3 from '../../assets/drkhushboo3.jpeg'
@@ -10,7 +10,8 @@ export default function AboutDrKhushboo() {
   return (
     <div className='main'>
       <div className="row row1">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
+        <img src={abt2} alt="" />
+        {/* <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src={slide1} class="d-block w-100" alt="..."/>
@@ -24,14 +25,10 @@ export default function AboutDrKhushboo() {
               <div class="carousel-item">
                 <img className="img-size" src={slide4} class="d-block w-100" alt="..."/>
               </div>
-              {/* <div class="carousel-item">
-                <img className="img-size" src={slide5} class="d-block w-100" alt="..."/>
-              </div> */}
             </div>
-          </div>
+          </div> */}
       </div>
     <div className='row'>
-      <div className="col-5 mt-0 mx-auto"><img className='img-fluid' src={self} alt="drnikhil" /></div>
       <div className="col-7 imgtextalign mt-5 pe-4">
         <h1>Consultant Psychiatrist</h1>
 
@@ -48,6 +45,12 @@ export default function AboutDrKhushboo() {
 
         <h2>Perinatal Mental Health</h2>
         <p>I have a deep focus on mental health issues during the perinatal period, which I believe to be one of the most crucial times in a family’s life. Adequate care during this phase can prevent a range of mental health challenges later in life.</p>
+      </div>
+      <div className="col-4">
+        <img className='img-fluid' src={slide1} alt="drnikhil" />
+        <img className='img-fluid' src={slide2} alt="drnikhil" />
+        <img className='img-fluid' src={slide3} alt="drnikhil" />
+        <img className='img-fluid' src={slide4} alt="drnikhil" />
       </div>
     </div>
     </div>

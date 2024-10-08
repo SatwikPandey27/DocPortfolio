@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import self from '../../assets/image2.jpeg'
+import abt3 from '../../assets/abt3.png'
 import slide1 from '../../assets/drrajesh1.jpeg'
 import slide2 from '../../assets/drrajesh2.jpeg'
 
@@ -8,7 +8,8 @@ export default function AboutDrRajesh() {
   return (
     <div className='main'>
       <div className="row row1">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
+        <img src={abt3} alt="" />
+        {/* <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src={slide1} class="d-block w-100" alt="..."/>
@@ -17,10 +18,9 @@ export default function AboutDrRajesh() {
                 <img className="img-size" src={slide2} class="d-block w-100" alt="..."/>
               </div>
             </div>
-          </div>
+          </div> */}
       </div>
     <div className='row'>
-      <div className="col-5 mt-1 mx-auto"><img className='img-fluid' src={self} alt="drnikhil" /></div>
       <div className="col-7 imgtextalign mt-5 pe-4">
         <h1>General Physician in Paschim Vihar, Delhi</h1>
 
@@ -33,6 +33,10 @@ export default function AboutDrRajesh() {
         <p>With a longstanding presence in Paschim Vihar, Delhi, Dr. Kansal has served the local community with dedication and integrity. His empathetic approach, combined with his extensive experience, has earned him the trust and respect of his patients, many of whom have been under his care for years.</p>
 
         <p>If you're looking for a reliable general physician who can provide expert medical advice, diagnosis, and treatment, Dr. Rajesh Kansal is a trusted choice, dedicated to promoting the overall health and well-being of his patients.</p>      </div>
+      <div className="col-4">
+        <img className='img-fluid' src={slide1} alt="drrajesh" />
+        <img className='img-fluid' src={slide2} alt="drrajesh" />
+      </div>
     </div>
     </div>
   )

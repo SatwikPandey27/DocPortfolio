@@ -6,11 +6,13 @@ import 'leaflet/dist/leaflet.css';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import '../footer/footer.css'
-import self from '../../assets/img1dn.jpeg'
+import abt1 from '../../assets/abt1.png'
 import slide1 from '../../assets/drnikhil1.jpeg'
 import slide2 from '../../assets/drnikhil11.jpeg'
-import slide3 from '../../assets/drnikhil10.jpeg'
-import slide4 from '../../assets/drnikhil7.png'
+import slide3 from '../../assets/drnikhil5.jpeg'
+import slide4 from '../../assets/drnikhil10.jpeg'
+import slide5 from '../../assets/drnikhil7.png'
+import slide6 from '../../assets/drnikhil6.jpeg'
 
 export default function AboutDrNikhil() {
   let DefaultIcon = L.icon({
@@ -25,7 +27,8 @@ export default function AboutDrNikhil() {
   return (
     <div className='main'>
       <div className="row row1">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
+        <img src={abt1} alt="abt1" />
+        {/* <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src={slide1} class="d-block w-100" alt="..."/>
@@ -39,14 +42,10 @@ export default function AboutDrNikhil() {
               <div class="carousel-item">
                 <img className="img-size" src={slide4} class="d-block w-100" alt="..."/>
               </div>
-              {/* <div class="carousel-item">
-                <img className="img-size" src={slide5} class="d-block w-100" alt="..."/>
-              </div> */}
             </div>
-          </div>
+          </div> */}
       </div>
     <div className='row'>
-      <div className="col-5 mt-0 mx-auto"><img className='img-fluid' src={self} alt="drnikhil" /></div>
       <div className="col-7 imgtextalign mt-5 pe-4">
           <h1>Consultant Spine Deformity & Endoscopic Spine Surgeon</h1>
 
@@ -111,6 +110,21 @@ export default function AboutDrNikhil() {
               </ul>
             </div>
           </div>
+      </div>
+      <div className="col-4 mt-0">
+        <img src={slide1} alt="" className="img-fluid" />
+        <img src={slide2} alt="" className="img-fluid" />
+        <img src={slide3} alt="" className="img-fluid" />
+        <img src={slide4} alt="" className="img-fluid" />
+        <img src={slide5} alt="" className="img-fluid" />
+        <img src={slide6} alt="" className="img-fluid" />
+        {/* <div className='text-center mb-3 border border-2'>
+          <h1>Dr. Nikhil Jain</h1>
+          <p>
+            MBBS <br /> MS Ortho, FNB Spine Surgery <br /> Fellowship MUH Hospital, Sydney, Australi <br /> Fellowship QMC, Nottingham, UK
+            <br />
+          </p>
+        </div> */}
       </div>
     </div>
     <footer className="site-footer section-padding border-3 border-top border-danger-subtle">
