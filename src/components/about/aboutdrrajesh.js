@@ -24,15 +24,16 @@ export default function AboutDrRajesh() {
       <div className="col-7 imgtextalign mt-5 pe-4">
         <h1>General Physician in Paschim Vihar, Delhi</h1>
 
-        <p>Dr. Rajesh Kansal is a seasoned doctor with 40 years of experience in the medical field. He completed his MBBS from Sardar Patel Medical College in 1984 and has since gained extensive expertise in treating a wide range of general medical conditions. Over the course of his career, he has built a reputation for providing comprehensive and compassionate care to patients of all ages.</p>
+        <p>I am a seasoned doctor with 40 years of experience in the medical field. I completed my MBBS from Sardar Patel Medical College in 1984, and since then, I have gained extensive expertise in treating a wide range of general medical conditions. Over the course of my career, I have built a reputation for providing comprehensive and compassionate care to patients of all ages.</p>
 
-        <p>Dr. Kansal's expertise extends across various aspects of internal medicine, preventive care, and the management of chronic illnesses. He is proficient in diagnosing and treating ailments such as diabetes, hypertension, respiratory infections, gastrointestinal disorders, and more. His commitment to staying up-to-date with advancements in the medical field ensures that his patients receive the most effective and current treatments available.</p>
+        <p>My expertise spans various aspects of internal medicine, preventive care, and the management of chronic illnesses. I am proficient in diagnosing and treating ailments such as diabetes, hypertension, respiratory infections, gastrointestinal disorders, and more. I stay up-to-date with advancements in the medical field to ensure that my patients receive the most effective and current treatments available.</p>
 
-        <p>Known for his thorough and dedicated approach to patient care, Dr. Kansal focuses on understanding the root causes of health issues and crafting personalized treatment plans. His patient-centric approach helps individuals not only recover from illness but also maintain and promote overall good health through lifestyle modifications and preventive measures. Dr. Kansal emphasizes the importance of preventive care and regular health check-ups, advocating for proactive measures to prevent the onset of serious medical conditions.</p>
+        <p>Known for my thorough and dedicated approach to patient care, I focus on understanding the root causes of health issues and crafting personalized treatment plans. My patient-centric approach helps individuals not only recover from illness but also maintain and promote overall good health through lifestyle modifications and preventive measures. I emphasize the importance of preventive care and regular health check-ups, advocating for proactive measures to prevent the onset of serious medical conditions.</p>
 
-        <p>With a longstanding presence in Paschim Vihar, Delhi, Dr. Kansal has served the local community with dedication and integrity. His empathetic approach, combined with his extensive experience, has earned him the trust and respect of his patients, many of whom have been under his care for years.</p>
+        <p>With a longstanding presence in Paschim Vihar, Delhi, I have served the local community with dedication and integrity. My empathetic approach, combined with my extensive experience, has earned me the trust and respect of my patients, many of whom have been under my care for years.</p>
 
-        <p>If you're looking for a reliable general physician who can provide expert medical advice, diagnosis, and treatment, Dr. Rajesh Kansal is a trusted choice, dedicated to promoting the overall health and well-being of his patients.</p>      </div>
+        <p>If you're looking for a reliable general physician who can provide expert medical advice, diagnosis, and treatment, I am dedicated to promoting the overall health and well-being of my patients.</p>
+      </div>
       <div className="col-4">
         <img className='img-fluid' src={slide1} alt="drrajesh" />
         <img className='img-fluid' src={slide2} alt="drrajesh" />

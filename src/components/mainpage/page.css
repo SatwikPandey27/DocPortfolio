@@ -4,19 +4,19 @@
   background: #F7F7F7;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1203.5px) {
   .home{
     margin-top: 118px;
   }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 552.5px) {
   .home{
     margin-top: 137px;
   }
 }
 
-@media (max-width: 453px) {
+@media (max-width: 396.5px) {
   .home{
     margin-top: 158px;
   }
@@ -84,9 +84,19 @@
   font-size: 24px;
 }
 
-.carousel-inner{
-  max-height: 600px;
+.carousel-item{
+  max-height: 610px;
 }
+
+.carousel-item img {
+  height: 100%;
+}  
+/* .carousel-item img {
+  object-fit: fill;
+  width: 100%;
+  max-height: 610px;
+  height: 100%;
+} */
 
 .btn {
   background: #4ea9b7;

@@ -1,5 +1,87 @@
-.hover-anim:hover{
+.container {
+  position: relative;
+}
+
+.circle-image {
+  position: absolute;
+  width: 90px; /* Adjust the size of the circles */
+  height: 90px;
+  border-radius: 36%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Positioning for each individual circle */
+.circle-1 {
+  top: 20px;
+  left: -93px;
+  background-image: url('../../assets/m1.jpeg');
+}
+
+.circle-2 {
+  top: 200px;
+  left: -93px;
+  background-image: url('../../assets/m2.jpeg');
+}
+
+.circle-3 {
+  top: 380px;
+  left: -93px;
+  background-image: url('../../assets/m3.jpeg');
+}
+
+.circle-4 {
+  top: 560px;
+  left: -93px;
+  background-image: url('../../assets/m4.jpeg');
+}
+
+.circle-5 {
+  top: 20px;
+  right: -93px;
+  background-image: url('../../assets/m5.jpeg');
+}
+
+.circle-6 {
+  top: 200px;
+  right: -93px;
+  background-image: url('../../assets/m6.jpeg');
+}
+
+.circle-7 {
+  top: 380px;
+  right: -93px;
+  background-image: url('../../assets/n1.jpeg');
+}
+
+.circle-8 {
+  top: 560px;
+  right: -93px;
+  background-image: url('../../assets/n2.jpeg');
+}
+
+/* Hove8 effect for circles */
+.circle-image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Res56nsive handling */
+@media (max-width: 768px) {
+  .circle-image {
+    display: none; /* Hide circles on smaller screens */
+  }
+}
+
+.hover-anim:hover {
   transform: scale(1.05);
   transition: transform 0.3s;
   cursor: pointer;
 }
+
+/* .hover-anim:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  cursor: pointer;
+} */

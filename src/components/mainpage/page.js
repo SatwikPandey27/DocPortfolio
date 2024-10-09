@@ -68,7 +68,6 @@ export default function home() {
               <br />
               <br />
               <br />
-              <br />
               <a href="/drrajesh" class="btn btn-primary">Know more <i className="bi bi-caret-right-fill"></i></a>
             </div>
           </div>
@@ -76,7 +75,7 @@ export default function home() {
             <img src={pic3} class="card-img-top pt-2" alt="about section 3"/>
             <div class="card-body">
               <h5 class="card-title">Dr. Khushboo Kansal</h5>
-              <p class="card-text px-0">Dr Khushboo Kansal <br />
+              <p class="card-text px-0">
                 Consultant Integrative Psychiatrist <br />
                 Lead in Perinatal Mental Health Services <br />
                 MBBS, MD Psychiatry, MRC Psych (UK), PMH-C</p>
@@ -90,7 +89,6 @@ export default function home() {
             <div class="card-body">
               <h5 class="card-title">Dr. Nikhil Jain</h5>
               <p class="card-text px-0">MBBS <br /> MS Ortho, FNB Spine Surgery <br /> Fellowship MUH Hospital, Sydney, Australia <br /> Fellowship QMC, Nottingham, UK</p>
-              <br />
               <a href="https://www.linkedin.com/company/drnikhiljain" className="bi-linkedin socials-specific"> </a>
               <a href="https://www.youtube.com/@Dr.NikhilJain" className="bi-youtube socials-specific"> </a>
               <br />

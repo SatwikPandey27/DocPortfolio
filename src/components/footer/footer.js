@@ -20,7 +20,7 @@ export default function Footer() {
 
                 <li className="list-group-item d-flex">
                   Sunday
-                  <span>11:00 AM to 1:00 PM</span>
+                  <span>10:00 AM to 2:00 PM</span>
                 </li>
 
               </ul>
@@ -30,7 +30,7 @@ export default function Footer() {
               <h5 className="mb-lg-4 mb-3">My Clinic</h5>
               <p>
                 <b>Satyak Healthcare Clinic</b><br />
-                124,A MaaShakti Apartments, A1 Block, Paschim Vihar, New Delhi, Delhi 110063
+                124-A, MaaShakti Apartments, A1 Block, Paschim Vihar, New Delhi-110063
               </p>
             </div>
 

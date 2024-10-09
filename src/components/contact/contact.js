@@ -33,8 +33,7 @@ export default function Contact() {
         </div>
         <div className="col py-2">
           <p className='mb-1'>For in-person consultations or treatments, you are welcome to visit our clinic during working hours.</p>
-          <p className='mb-0'><b>124-A, Maa Shakti Apartment A1 BLOCK Paschim Vihar
-          New Delhi, Delhi-110063 :</b></p>
+          <p className='mb-0'><b>124-A, Maa Shakti Apartment, A1 BLOCK, Paschim Vihar, New Delhi-110063 :</b></p>
           <div className="map-wrap">
             <MapContainer center={location} zoom={25} className='border border-2 border-black'>
               <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

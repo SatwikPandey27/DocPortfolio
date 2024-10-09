@@ -2,7 +2,7 @@ import React from "react";
 import "./navbar.css";
 import logo from '../../assets/logo2.png';
 
-export default function Navbar() {
+export default function NavbarDet() {
   return (
     <>
       {/* New Row for Contact Details */}
@@ -37,28 +37,7 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto menu"> {/* Use ms-auto class to align right */}
               <li className="nav-item active">
-                <a className="nav-link fs-5" href="/">Home</a>
-              </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle fs-5" href="#treatment" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Conditions Treated
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="#treatment">Mental Health</a></li>
-                  <li><a className="dropdown-item" href="#treatment">Women’s Health</a></li>
-                  <li><a className="dropdown-item" href="#treatment">Geriatric Health</a></li>
-                  <li><a className="dropdown-item" href="#Ghealth">General Health</a></li>
-                  <li><a className="dropdown-item" href="#Spine">Spine Conditions</a></li>
-                </ul>
-              </li>
-              <li className="nav-item active">
-                <a className="nav-link fs-5" href="#team">Our Team</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link fs-5" href="#testimonials">Testimonials</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link fs-5" href="#contact">Contact</a>
+                <a className="nav-link fs-5 back" href="/"><i class="bi bi-caret-left"></i>Back Home</a>
               </li>
             </ul>
           </div>

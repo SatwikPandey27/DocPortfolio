@@ -32,7 +32,7 @@ export default function AboutDrKhushboo() {
       <div className="col-7 imgtextalign mt-5 pe-4">
         <h1>Consultant Psychiatrist</h1>
 
-        <p>I am a consultant psychiatrist with a decade of clinical experience in mental health. After completing my MBBS and MD in psychiatry from reputed medical colleges in India, I worked at various private and government hospitals across Delhi NCR.</p>
+        <p>I am a consultant psychiatrist with a decade of clinical experience in mental health. After completing my MBBS and MD in psychiatry from prestigious medical colleges in India, I have worked at various private and government hospitals across Delhi NCR.</p>
 
         <p>To further broaden my expertise, I traveled to Australia and the UK, where I gained invaluable experience in treating complex mental health issues. I earned the prestigious Membership of the Royal College of Psychiatrists, England (MRCPsych) and received Perinatal Mental Health Certification (PMH-C) from Postpartum Support International.</p>
 

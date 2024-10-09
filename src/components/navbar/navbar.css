@@ -1,5 +1,5 @@
 .top-bar {
-  background-color: #3378c7;
+  background-color: #22558f;
   color: whitesmoke;
   padding: 5px 0;
   font-size: 14px;
@@ -8,7 +8,7 @@
 }
 
 .top-bar span {
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 @media (max-width: 768px) {
@@ -32,7 +32,7 @@
   min-height: 69px;
   z-index: 1000;
   opacity: 97%;
-  background: #3378c7;
+  background: #2671c6;
   position: fixed;
   top: 30px;
 }
@@ -133,21 +133,21 @@
   transform: scaleX(1);
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1203.5px) {
   .navbar{
     top: 50px;
   }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 552.5px) {
   .navbar{
     top: 69px;
   }
 }
 
-@media (max-width: 455px) {
+@media (max-width: 396.5px) {
   .navbar{
-    top: 89px;
+    top: 91px;
   }
 }
 
@@ -161,4 +161,8 @@
     margin-right: 0;       /* Remove right margin for stacked layout */
     margin-bottom: 10px;   /* Optional: Add space between items */
   }
+}
+
+.back:hover{
+  transform: scale(1.06);
 }
