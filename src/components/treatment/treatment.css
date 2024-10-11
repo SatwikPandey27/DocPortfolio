@@ -2,76 +2,34 @@
   position: relative;
 }
 
-.circle-image {
-  position: absolute;
-  width: 90px; /* Adjust the size of the circles */
-  height: 90px;
-  border-radius: 36%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.content-with-images {
+  display: flex;
+  justify-content: space-between; /* Ensures the content and images stay separated */
+  align-items: flex-start; /* Aligns content to the top */
 }
 
-/* Positioning for each individual circle */
-.circle-1 {
-  top: 20px;
-  left: -93px;
-  background-image: url('../../assets/m1.jpeg');
+.content {
+  flex: 1; /* Takes up the remaining space on the left */
 }
 
-.circle-2 {
-  top: 200px;
-  left: -93px;
-  background-image: url('../../assets/m2.jpeg');
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px; /* Adjusts space between content and images */
 }
 
-.circle-3 {
-  top: 380px;
-  left: -93px;
-  background-image: url('../../assets/m3.jpeg');
+.eg-image {
+  width: 150px; /* Set appropriate size for the images */
+  height: 130px;
+  margin-bottom: 10px;
+  border-radius: 10%; /* Slight rounding for images */
 }
-
-.circle-4 {
-  top: 560px;
-  left: -93px;
-  background-image: url('../../assets/m4.jpeg');
-}
-
-.circle-5 {
-  top: 20px;
-  right: -93px;
-  background-image: url('../../assets/m5.jpeg');
-}
-
-.circle-6 {
-  top: 200px;
-  right: -93px;
-  background-image: url('../../assets/m6.jpeg');
-}
-
-.circle-7 {
-  top: 380px;
-  right: -93px;
-  background-image: url('../../assets/n1.jpeg');
-}
-
-.circle-8 {
-  top: 560px;
-  right: -93px;
-  background-image: url('../../assets/n2.jpeg');
-}
-
-/* Hove8 effect for circles */
-.circle-image:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Res56nsive handling */
-@media (max-width: 768px) {
-  .circle-image {
-    display: none; /* Hide circles on smaller screens */
-  }
+.eg-imagegh {
+  width: 150px; /* Set appropriate size for the images */
+  height: 180px;
+  margin-bottom: 10px;
+  border-radius: 10%; /* Slight rounding for images */
 }
 
 .hover-anim:hover {
@@ -80,8 +38,13 @@
   cursor: pointer;
 }
 
-/* .hover-anim:hover{
-  transform: scale(1.05);
-  transition: transform 0.3s;
-  cursor: pointer;
-} */
+/* Responsive handling */
+@media (max-width: 768px) {
+  .content-with-images {
+    flex-direction: column;
+  }
+  .images {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}

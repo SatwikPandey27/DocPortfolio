@@ -49,23 +49,23 @@ export default function Testimonials() {
     },
   ];
 
-  // const youtubeVideos = [
-  //   {
-  //     id: 1,
-  //     title: "Doctor Testimonial 1",
-  //     url: "https://www.youtube.com/embed/VIDEO_ID_1",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Doctor Testimonial 2",
-  //     url: "https://www.youtube.com/embed/VIDEO_ID_2",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Doctor Testimonial 3",
-  //     url: "https://www.youtube.com/embed/VIDEO_ID_3",
-  //   }
-  // ];
+  const youtubeVideos = [
+    {
+      id: 1,
+      title: "Doctor Testimonial 1",
+      url: "https://www.youtube.com/embed/VIDEO_ID_1",
+    },
+    {
+      id: 2,
+      title: "Doctor Testimonial 2",
+      url: "https://www.youtube.com/embed/VIDEO_ID_2",
+    },
+    {
+      id: 3,
+      title: "Doctor Testimonial 3",
+      url: "https://www.youtube.com/embed/VIDEO_ID_3",
+    }
+  ];
 
   useEffect(() => {
     // Ensure jQuery and owlCarousel are loaded
@@ -136,13 +136,13 @@ export default function Testimonials() {
       ))}
       </div>
 
-      {/* <h2 className="mt-5">Doctor Video Testimonials</h2>
+      <h2 className="mt-5">Video Testimonials</h2>
       <div className="owl-carousel owl-theme owl-carousel-videos">
         {youtubeVideos.map((video) => (
           <div key={video.id} className="item p-3">
             <iframe
               width="100%"
-              height="315"
+              height="250"
               src={video.url}
               title={video.title}
               frameBorder="0"
@@ -151,7 +151,7 @@ export default function Testimonials() {
             ></iframe>
           </div>
         ))}
-      </div> */}
+      </div>
 
     </div>
   );

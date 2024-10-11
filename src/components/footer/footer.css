@@ -1,8 +1,13 @@
 .site-footer {
-  background: #2c7dda;
+  background: 
+    linear-gradient(rgba(22, 101, 192, 0.85), rgba(22, 101, 192, 0.85)), /* Semi-transparent blue overlay */
+    url('../../assets/healthcare.jpg') no-repeat center center; /* Background image */
+  background-size: cover;
   padding: 30px 20px;
   color: whitesmoke;
   font-size: 17px;
+  position: relative; /* Ensures content positions properly */
+  opacity: 96%;
 }
 
 a {
@@ -20,6 +25,19 @@ a:hover {
   text-decoration: none;
 }
 
+.logo{
+  height: 120px;
+  width: 120px;
+  border: 2px black;
+  border-radius: 50%;
+  margin-left: 25%;
+}
+h4{
+  margin-left: 8.5%;
+}
+.text-justify {
+  text-align: justify;
+}
 /*---------------------------------------
   SOCIAL ICON               
 -----------------------------------------*/
@@ -28,8 +46,24 @@ a:hover {
   padding: 0;
 }
 
+.nodec{
+  text-decoration: none;
+  color: white;
+}
+.nodec:hover{
+  color: white;
+}
+
+.contact li {
+  color: rgb(255, 255, 255);
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  transition: all 0.3s;
+}
+
 .social-icon li {
-  color: black;
+  color: rgb(255, 255, 255);
   list-style: none;
   display: inline-block;
   vertical-align: top;
@@ -70,8 +104,7 @@ a:hover {
 }
 
 .containerfooter{
-  margin: 16px 48px;
-  padding-left: 48px;
+  margin: 16px 40px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -83,4 +116,28 @@ a:hover {
     margin: 0px 10px;
     padding-left: 2px;
   }
+}
+
+/* Map */
+.map-wrap {
+  width: 100%;
+  height: 300px;
+  margin-top: 0;
+  position: relative; /* Ensure it stays within its bounds */
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Makes sure it's on top of other elements */
+  position: relative;
+}
+
+.contact-page {
+  position: relative; /* Ensure no other content overlaps */
+  overflow: hidden; /* Prevents content from breaking the layout */
+}
+
+.bg-image{
+  z-index: -3;
 }

@@ -3,10 +3,12 @@ import "./page.css";
 // import Main from "../../assets/generalphysician.jpg";
 // import col1 from "../../assets/scans.jpg";
 // import col2 from "../../assets/scans1.jpg";
-import ContactUs from '../contact/contact'
+// import ContactUs from '../contact/contact'
 import ReviewCarousel from '../testimonials/testimonials'
 import Footer from '../footer/footer'
 import Treatment from "../treatment/treatment";
+import AboutUs from "../about/aboutus";
+import Faq from "../faq/faq";
 // import logo from '../../assets/logo2.png'
 import pic from '../../assets/img1.jpeg'
 import slide1 from '../../assets/slide1.png'
@@ -37,6 +39,16 @@ export default function home() {
         </div>
       </div>
 
+      <div id="about"></div>
+        <br />
+        <br />
+        <hr className="mx-5 border-2 mb-5 border-success-subtle"/>
+        <div>
+          <h1 className="text-center">About us</h1>
+          <br />
+          <AboutUs/>
+        </div>
+
       <div id="treatment"></div>
         <br />
         <br />
@@ -46,7 +58,6 @@ export default function home() {
           <br />
           <Treatment/>
         </div>
-
 
         <div id="team"></div>
         <br />
@@ -105,15 +116,25 @@ export default function home() {
           <br />
           <ReviewCarousel/>
         </div>
-        <div id="contact"></div>
+        {/* <div id="contact"></div> */}
+        {/* <br /> */}
+        {/* <br /> */}
+        {/* <hr className="mx-5 border-2 mb-5 border-success-subtle"/> */}
+        {/* <div> */}
+          {/* <h1 className="text-center">Contact Us</h1> */}
+          {/* <br /> */}
+          {/* <ContactUs/> */}
+        {/* </div> */}
+        <div id="faq"></div>
         <br />
         <br />
         <hr className="mx-5 border-2 mb-5 border-success-subtle"/>
         <div>
-          <h1 className="text-center">Contact Us</h1>
+          <h1 className="text-center">Frequently Asked Questions</h1>
           <br />
-          <ContactUs/>
+          <Faq />
         </div>
+
         <div id="footer">
           <Footer />
         </div>

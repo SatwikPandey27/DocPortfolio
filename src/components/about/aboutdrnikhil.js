@@ -33,7 +33,7 @@ export default function AboutDrNikhil() {
       <div className="col-7 imgtextalign mt-5 pe-4">
           <h1>Consultant Spine Deformity & Endoscopic Spine Surgeon</h1>
 
-          <p>With extensive training in advanced spine surgery, I am a specialized consultant in spine deformities and endoscopy. I hold an FNB in Spine Surgery from Sir Ganga Ram Hospital, New Delhi, along with prestigious fellowships in Complex Spine Surgery from Macquarie University, Sydney, and Advanced Spine Surgery from Queen’s Medical Centre, Nottingham, UK.</p>
+          <p>With extensive training in advanced spine surgery, I am a specialized consultant in spine deformities and endoscopy. I hold an FNB in Spine Surgery from Sir Ganga Ram Hospital, New Delhi, along with prestigious fellowships in Complex Spine Surgery from Macquarie University, Sydney, Australia and Advanced Spine Surgery from Queen’s Medical Centre, Nottingham, UK.</p>
 
           <p>I have practiced at leading institutions across Delhi NCR, including Jaypee Hospital in Noida and Indraprastha Apollo Hospitals in Sarita Vihar. My international fellowships have prepared me to meet global standards in spinal care. Currently, I am a consultant at Manipal Hospitals, Dwarka, Delhi.</p>
 
@@ -125,7 +125,7 @@ export default function AboutDrNikhil() {
             <h5 className="mb-lg-4 mb-3">Clinic Address</h5>
             <div className="col pt-1">
               <p className='mb-1'>For in-person consultations or treatments, you are welcome to visit my clinic during working hours.</p>
-              <p className='mb-0'>Room no - 68, OPD - 6, Floor 5 , 
+              <p className='mb-0'>Room no - 56, OPD - 7, Floor - 2 , 
                 Manipal hospital, Sector 6, Dwarka, New Delhi - 110075 :</p>
               <div className="map-wrap">
                 <MapContainer center={location} zoom={25} className='border border-2 border-black'>

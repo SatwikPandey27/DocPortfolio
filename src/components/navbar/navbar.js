@@ -13,7 +13,11 @@ export default function Navbar() {
             <span>🕒 Timings: 10:30 AM - 2:00 PM & 6:00 PM - 9:00 PM | Sat 10:00 AM - 2:00 PM</span>
           </div>
           <div>
-            <span>🏥 Address: 124-A, MaaShakti Apartments, A1 Block, Paschim Vihar, New Delhi-110063</span>
+            <span>
+              <a className="nodec" href="https://www.google.com/maps?q=124-A,+MaaShakti+Apartments,+A1+Block,+Paschim+Vihar,+New+Delhi-110063">
+                🏥 Address: 124-A, MaaShakti Apartments, A1 Block, Paschim Vihar, New Delhi-110063
+              </a>
+            </span>
           </div>
         </div>
       </div>
@@ -39,6 +43,9 @@ export default function Navbar() {
               <li className="nav-item active">
                 <a className="nav-link fs-5" href="/">Home</a>
               </li>
+              <li className="nav-item active">
+                <a className="nav-link fs-5" href="#about">About Us</a>
+              </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle fs-5" href="#treatment" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Conditions Treated
@@ -58,8 +65,17 @@ export default function Navbar() {
                 <a className="nav-link fs-5" href="#testimonials">Testimonials</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link fs-5" href="#contact">Contact</a>
+                <a className="nav-link fs-5" href="/blog">Blogs</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link fs-5" href="#faq">FAQ</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link fs-5" href="/gallery">Gallery</a>
+              </li>
+              {/* <li className="nav-item">
+                <a className="nav-link fs-5" href="#contact">Contact</a>
+              </li> */}
             </ul>
           </div>
         </div>

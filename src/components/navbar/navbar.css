@@ -1,5 +1,5 @@
 .top-bar {
-  background-color: #22558f;
+  background-color: #0e578c;
   color: whitesmoke;
   padding: 5px 0;
   font-size: 14px;
@@ -32,7 +32,7 @@
   min-height: 69px;
   z-index: 1000;
   opacity: 97%;
-  background: #2671c6;
+  background: #1669A6;
   position: fixed;
   top: 30px;
 }
@@ -165,4 +165,12 @@
 
 .back:hover{
   transform: scale(1.06);
+}
+
+.nodec{
+  text-decoration: none;
+  color: white;
+}
+.nodec:hover{
+  color: white;
 }
