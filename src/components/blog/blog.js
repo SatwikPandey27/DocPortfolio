@@ -13,7 +13,8 @@ export default function Blog() {
         <p className="post-content">
           Managing stress is crucial for maintaining a healthy lifestyle. In today's busy world, we are constantly bombarded with demands. Here are 5 simple strategies that can help you stay calm...
         </p>
-        <a href="#" className="read-more">Read More</a>
+        <p href="#" className="read-more">Read More</p>
+        {/* <a href="#" className="read-more">Read More</a> */}
       </div>
 
       <div className="blog-post">
@@ -23,7 +24,8 @@ export default function Blog() {
         <p className="post-content">
           Hypertension, or high blood pressure, is a common condition that can lead to severe health complications if not managed properly. Learn the key lifestyle changes and medications used to control hypertension...
         </p>
-        <a href="#" className="read-more">Read More</a>
+        <p href="#" className="read-more">Read More</p>
+        {/* <a href="#" className="read-more">Read More</a> */}
       </div>
 
       <div className="blog-post">
@@ -33,7 +35,8 @@ export default function Blog() {
         <p className="post-content">
           Back pain is one of the most common complaints in modern life. Whether it's due to bad posture, injury, or aging, taking care of your spine is critical to overall well-being...
         </p>
-        <a href="#" className="read-more">Read More</a>
+        <p href="#" className="read-more">Read More</p>
+        {/* <a href="#" className="read-more">Read More</a> */}
       </div>
 
     </div>
