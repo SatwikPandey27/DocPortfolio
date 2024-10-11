@@ -17,7 +17,7 @@ export default function Treatment() {
   return (
     <div className='container'>
       {/* Row 1 */}
-      <div className="row">
+      <div className="row mb-2">
         {/* Mental Health Section */}
         <div className="col border border-2 rounded hover-anim m-2 p-3">
           <div className="content-with-images">
@@ -74,7 +74,7 @@ export default function Treatment() {
         </div>
       </div>
       {/* Row 2 */}
-      <div className="row">
+      <div className="row mb-2">
         {/* General Health Issues */}
         <div className="col border border-2 rounded hover-anim m-2 p-3">
           <div className="content-with-images">
@@ -114,7 +114,7 @@ export default function Treatment() {
       </div>
 
       {/* Row 3 */}
-      <div className="row">
+      <div className="row mb-2">
         {/* Spine & Skeletal Disorders */}
         <div className="col border border-2 rounded hover-anim m-2 p-3">
           <div className="content-with-images">
