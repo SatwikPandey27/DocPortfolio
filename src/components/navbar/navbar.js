@@ -70,7 +70,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <a className="nav-link fs-5" href="#faq">FAQ</a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item me-0">
                 <a className="nav-link fs-5" href="/gallery">Gallery</a>
               </li>
               {/* <li className="nav-item">
