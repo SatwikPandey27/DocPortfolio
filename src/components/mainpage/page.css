@@ -4,23 +4,29 @@
   background: #F7F7F7;
 }
 
-@media (max-width: 1207.5px) {
+@media (max-width: 1210px) {
   .home{
     margin-top: 118px;
   }
 }
 
-@media (max-width: 552.5px) {
+@media (max-width: 617.5px) {
   .home{
-    margin-top: 137px;
+    margin-top: 143px;
   }
 }
 
-@media (max-width: 396.5px) {
+/* @media (max-width: 552.5px) {
+  .home{
+    margin-top: 137px;
+  }
+} */
+
+/* @media (max-width: 396.5px) {
   .home{
     margin-top: 158px;
   }
-}
+} */
 
 .socials-specific {
   transition: color 0.3s ease, background-color 0.3s ease;

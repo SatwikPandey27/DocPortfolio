@@ -53,7 +53,7 @@ export default function Treatment() {
             </ul>
             </div>
             <div className="images">
-              <img className="eg-imagegh img-fluid" src={women} alt="Spine Procedure 1" />
+              <img className="eg-imagegh img-fluid mt-sm-5" src={women} alt="Spine Procedure 1" />
             </div>
           </div>
         </div>

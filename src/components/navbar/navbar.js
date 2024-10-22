@@ -7,17 +7,22 @@ export default function Navbar() {
     <>
       {/* New Row for Contact Details */}
       <div className="top-bar fixed-top">
-        <div className="container-fluid d-flex justify-content-between align-items-center">
-          <div>
-            <span> <a href="tel:+91 88105 60977" className="nodec">📞 +91 88105 60977</a> |</span>
-            <span>🕒 Timings: 10:30 AM - 2:00 PM & 6:00 PM - 9:00 PM | Sun 10:00 AM - 2:00 PM</span>
+        <div className="mx-lg-2 mx-md-1 d-flex justify-content-between align-items-center">
+          <div className="col pe-sm-3">
+            <span><a href="tel:+91 88105 60977" className="nodec">📞 +91 88105 60977</a> |</span>
+            {/* <span>🕒 Timings: 10:30 AM - 2:00 PM & 6:00 PM - 9:00 PM | Sun 10:00 AM - 2:00 PM</span> */}
+              <span className="d-none d-md-inline">
+                🕒 Timings: 10:30AM - 2:00PM & 6:00PM - 9:00PM | Sun 10AM - 2PM
+              </span>
+              <span className="d-inline d-md-none">
+                <br />10:30AM - 2PM & 6 PM - 9PM <br /> Sun 10AM - 2PM
+              </span>
           </div>
-          <div>
-            <span>
-              <a className="nodec" href="https://www.google.com/maps?q=124-A,+MaaShakti+Apartments,+A1+Block,+Paschim+Vihar,+New+Delhi-110063">
-                🏥 Address: 124-A, MaaShakti Apartments, A1 Block, Paschim Vihar, New Delhi-110063
+          <div className="col ms-sm-3">
+              <a className="nodec address" href="https://www.google.com/maps?q=124-A,+MaaShakti+Apartments,+A1+Block,+Paschim+Vihar,+New+Delhi-110063">
+                <span className="d-none d-lg-inline">🏥 Address: 124-A, MaaShakti Apartments, A1 Block, Paschim Vihar, New Delhi-110063</span>
+                <span className="d-inline d-lg-none">🏥: 124-A, MaaShakti Apartments, A1 Block, Paschim Vihar, Delhi-63</span>
               </a>
-            </span>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@
   .top-bar {
     font-size: 12px;
     text-align: left;
-    padding: 10px;
+    padding: 10px 8px;
   }
 }
 
@@ -133,23 +133,29 @@
   transform: scaleX(1);
 }
 
-@media (max-width: 1207.5px) {
+@media (max-width: 1210px) {
   .navbar{
     top: 50px;
   }
 }
 
-@media (max-width: 552.5px) {
+@media (max-width: 617.5px) {
   .navbar{
-    top: 69px;
+    margin-top: 24px;
   }
 }
 
-@media (max-width: 396.5px) {
+/* @media (max-width: 552.5px) {
+  .navbar{
+    top: 69px;
+  }
+} */
+
+/* @media (max-width: 396.5px) {
   .navbar{
     top: 91px;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .menu {
