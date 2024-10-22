@@ -53,22 +53,42 @@ export default function Testimonials() {
     {
       id: 1,
       title: "Doctor Testimonial 1",
-      url: "https://www.youtube.com/embed/VIDEO_ID_1",
+      url: "https://www.youtube.com/embed/m4nQ-jLYpko?si=mZJ-6pDsq-QYfD0i",
     },
     {
       id: 2,
       title: "Doctor Testimonial 2",
-      url: "https://www.youtube.com/embed/VIDEO_ID_2",
+      url: "https://www.youtube.com/embed/2j5C-LUY1Uk?si=NAlGZ5c0p_l6s8C1",
     },
     {
       id: 3,
       title: "Doctor Testimonial 3",
-      url: "https://www.youtube.com/embed/VIDEO_ID_3",
+      url: "https://www.youtube.com/embed/bYE9yhxF1J4?si=vn3DyMHt2qBnGYVS",
     }
   ];
 
   useEffect(() => {
-    // Ensure jQuery and owlCarousel are loaded
+    if (window.$ && window.$.fn.owlCarousel) {
+      window.$('.owl-carousel-videos').owlCarousel({
+        loop: true,
+        margin: 18,
+        autoplay: false,  // Explicitly setting to false
+        autoplayHoverPause: true,  // Add this to pause on hover
+        nav: true,
+        navText: [
+          "<div class='custom-nav-left'><i class='bi bi-caret-left-fill'></i></div>",
+          "<div class='custom-nav-right'><i class='bi bi-caret-right-fill'></i></div>"
+        ],
+        responsive: {
+          0: { items: 1 },
+          600: { items: 2 },
+          1000: { items: 3 }
+        }
+      });
+    }
+  }, []);
+
+  useEffect(() => {
     if (window.$ && window.$.fn.owlCarousel) {
       window.$('.owl-carousel').owlCarousel({
         loop: true,
@@ -82,22 +102,6 @@ export default function Testimonials() {
           "<div class='custom-nav-right'><i class='bi bi-caret-right-fill'></i></div>"
         ],
         responsiveClass: true,
-        responsive: {
-          0: { items: 1 },
-          600: { items: 2 },
-          1000: { items: 2 }
-        }
-      });
-
-      window.$('.owl-carousel-videos').owlCarousel({
-        loop: true,
-        margin: 18,
-        autoplay: false,
-        nav: true,
-        navText: [
-          "<div class='custom-nav-left'><i class='bi bi-caret-left-fill'></i></div>",
-          "<div class='custom-nav-right'><i class='bi bi-caret-right-fill'></i></div>"
-        ],
         responsive: {
           0: { items: 1 },
           600: { items: 2 },
@@ -146,7 +150,7 @@ export default function Testimonials() {
               src={video.url}
               title={video.title}
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
