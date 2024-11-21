@@ -64,6 +64,16 @@ export default function Testimonials() {
       id: 3,
       title: "Doctor Testimonial 3",
       url: "https://www.youtube.com/embed/bYE9yhxF1J4?si=vn3DyMHt2qBnGYVS",
+    },
+    {
+      id: 4,
+      title: "Doctor Testimonial 3",
+      url: "https://www.youtube.com/embed/tziyQLrtUTk?si=1HZuFZxOfpdjm6JZ",
+    },
+    {
+      id: 5,
+      title: "Doctor Testimonial 3",
+      url: "https://www.youtube.com/embed/IjkJJf4WmXQ?si=NXQ3U1maTfyXt_vp" ,
     }
   ];
 
