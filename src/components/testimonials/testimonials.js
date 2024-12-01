@@ -1,5 +1,7 @@
 import './testimonials.css';
 import React, { useEffect, useState } from 'react';
+// import vid1 from "../../assets/VidTest/vid1.mp4";
+// import vid2 from "../../assets/VidTest/vid2.mp4";
 
 export default function Testimonials() {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -77,26 +79,120 @@ export default function Testimonials() {
     }
   ];
 
-  useEffect(() => {
-    if (window.$ && window.$.fn.owlCarousel) {
-      window.$('.owl-carousel-videos').owlCarousel({
-        loop: true,
-        margin: 18,
-        autoplay: false,  // Explicitly setting to false
-        autoplayHoverPause: true,  // Add this to pause on hover
-        nav: true,
-        navText: [
-          "<div class='custom-nav-left'><i class='bi bi-caret-left-fill'></i></div>",
-          "<div class='custom-nav-right'><i class='bi bi-caret-right-fill'></i></div>"
-        ],
-        responsive: {
-          0: { items: 1 },
-          600: { items: 2 },
-          1000: { items: 3 }
-        }
-      });
-    }
-  }, []);
+//   const videoTestimonials = [
+//     {
+//       id: 1,
+//       title: "Video Testimonial 1",
+//       src: vid1,
+//     },
+//     {
+//       id: 2,
+//       title: "Video Testimonial 2",
+//       src: vid2,
+//     },
+//   ];
+
+//   useEffect(() => {
+//     if (window.$ && window.$.fn.owlCarousel) {
+//       window.$('.owl-carousel-videos').owlCarousel({
+//         loop: true,
+//         margin: 18,
+//         autoplay: false,
+//         autoplayHoverPause: true,
+//         nav: true,
+//         navText: [
+//           "<div class='custom-nav-left'><i class='bi bi-caret-left-fill'></i></div>",
+//           "<div class='custom-nav-right'><i class='bi bi-caret-right-fill'></i></div>"
+//         ],
+//         responsive: {
+//           0: { items: 1 },
+//           600: { items: 2 },
+//           1000: { items: 3 }
+//         }
+//       });
+//     }
+//   }, []);
+
+//   return (
+//     <div className='row main-container mx-auto'>
+//       <div className="owl-carousel owl-theme">
+//         {reviews.map((review, index) => (
+//           <div key={index} className="item p-3 text-center border border-1 border-black">
+//             {/* Add the timeline in the top-right corner */}
+//             <div className="timeline">{review.timeline}</div>
+//             <h3 className='pt-2'>Visited {review.doctor}</h3>
+//             <p style={{
+//               maxHeight: expandedIndex === index ? 'none' : '60px',
+//               overflow: 'hidden',
+//               transition: 'max-height 0.3s ease-in-out'
+//             }}>
+//               {review.text}
+//             </p>
+//             <div className="button-container">
+//               <button onClick={() => setExpandedIndex(expandedIndex === index ? null : index)} className="read-more-btn">
+//                 {expandedIndex === index ? 'Read Less' : 'Read More'}
+//               </button>
+//             </div>
+//             <p>{review.patient}</p>
+//           </div>
+//         ))}
+//       </div>
+
+//       <h2 className="mt-5">Video Testimonials</h2>
+//       <div className="owl-carousel owl-theme owl-carousel-videos">
+//         {/* Add local video testimonials */}
+//         {videoTestimonials.map((video) => (
+//           <div key={video.id} className="item p-3">
+//             <video
+//               width="100%"
+//               height="250"
+//               controls
+//               title={video.title}
+//             >
+//               <source src={video.src} type="video/mp4" />
+//               Your browser does not support the video tag.
+//             </video>
+//           </div>
+//         ))}
+//         {/* Add YouTube video testimonials */}
+//         {youtubeVideos.map((video) => (
+//           <div key={video.id} className="item p-3">
+//             <iframe
+//               width="100%"
+//               height="250"
+//               src={video.url}
+//               title={video.title}
+//               frameBorder="0"
+//               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+//               allowFullScreen
+//             ></iframe>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+//   useEffect(() => {
+//     if (window.$ && window.$.fn.owlCarousel) {
+//       window.$('.owl-carousel-videos').owlCarousel({
+//         loop: true,
+//         margin: 18,
+//         autoplay: false,  // Explicitly setting to false
+//         autoplayHoverPause: true,  // Add this to pause on hover
+//         nav: true,
+//         navText: [
+//           "<div class='custom-nav-left'><i class='bi bi-caret-left-fill'></i></div>",
+//           "<div class='custom-nav-right'><i class='bi bi-caret-right-fill'></i></div>"
+//         ],
+//         responsive: {
+//           0: { items: 1 },
+//           600: { items: 2 },
+//           1000: { items: 3 }
+//         }
+//       });
+//     }
+//   }, []);
 
   useEffect(() => {
     if (window.$ && window.$.fn.owlCarousel) {
